@@ -8,7 +8,7 @@ import slice1 from "../../../acsset/slice/slice1.png";
 import slice2 from "../../../acsset/slice/thietke.png";
 import slice3 from "../../../acsset/slice/slide2 1.png";
 import br1 from "../../../acsset/slice/br1.png";
-import avatar from "../../../acsset/slice/avatar.png";
+import avatar from "../../../acsset/slice/avatar3.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Hero = () => {
@@ -48,13 +48,14 @@ const Hero = () => {
         </Slider>
         <ContenSlice data-aos="fade-right">
           <ContenIFT>
-            <p>Luxury in every little corner</p>
+            <p>Luôn lắng nghe, ưu tiên ý kiến phía khách hàng</p>
           </ContenIFT>
         </ContenSlice>
         <ContenLeft data-aos="fade-right">
           <ContenIFT>
-            <h1>Sang Vip</h1>
-            <p>Homestyle truly brings freshness and uniqueness to your home.</p>
+            <h1>Minh Hiếu</h1>
+            <br />
+            <p>Không gian sống an ninh, hiện đại</p>
             <ContenIFTbr>
               <img src={avatar} />
             </ContenIFTbr>
@@ -67,16 +68,16 @@ const Hero = () => {
           data-aos-easing="linear"
           data-aos-duration="1500"
         >
-          Bring Serenity to Your Place <br />
-          with Our Thoughtful Designs
+          Hệ Thống Nhà Trọ <br />
+          Sinh Viên
         </h1>
         <h3>
           Bring Serenity to
           <br /> Your Place
         </h3>
         <p>
-        Discover the perfect design that reflects your style, 
-          <br /> and we will bring it to life
+          Phòng trọ sạch sẽ, tiện nghi, giá cả sinh viên
+          <br /> đem lại sự bình yên và cảm giác như ở nhà
         </p>
       </div>
     </Wapper>

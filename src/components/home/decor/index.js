@@ -38,8 +38,8 @@ const DecorPaner = () => {
   return (
     <Wapeer>
       <TitlePaner>
-        <p>make your home</p>
-        <h1 data-aos="fade-right">A Dream home</h1>
+        <p>Tham khảo một số</p>
+        <h1 data-aos="fade-right">Decor mẫu</h1>
       </TitlePaner>
       <Container>
         <Slider {...settings}>
@@ -130,7 +130,7 @@ const Container = styled.div`
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
-z-index: 1;
+    z-index: 1;
   }
 
   .slick-next {
@@ -243,11 +243,6 @@ const ContainF = styled.div`
   }
 `;
 
-
-
-
-
-
 // const ContainF = styled.div`
 //   display: flex;
 //   align-items: center;
@@ -261,4 +256,4 @@ const ContainF = styled.div`
 //       width: 70%;
 //     }
 //   }
-// `; 
+// `;

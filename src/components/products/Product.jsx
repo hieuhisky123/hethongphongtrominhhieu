@@ -18,72 +18,80 @@ import search from "../images/search.png";
 
 const Product = ({ onUpdateWishlistCount }) => {
   // State lưu trữ giá trị của các bộ lọc
-  const [selectedCategories, setSelectedCategories] = useState([]);
-  const [nameFilter, setNameFilter] = useState("");
-  const [showDropdown, setShowDropdown] = useState(false);
-  const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(30000);
-  const [sortBy, setSortBy] = useState("Sort by Rated");
-  const [showSortDropdown, setShowSortDropdown] = useState(false);
+  const [selectedCategories, setSelectedCategories] = useState([]); // Danh mục được chọn
+  const [nameFilter, setNameFilter] = useState(""); // Chuỗi tìm kiếm sản phẩm theo tên
+  const [showDropdown, setShowDropdown] = useState(false); // Hiển thị dropdown cho danh mục
+  const [minPrice, setMinPrice] = useState(0); // Giá trị tối thiểu
+  const [maxPrice, setMaxPrice] = useState(5000000); // Giá trị tối đa
+  const [sortBy, setSortBy] = useState("Sắp Xếp"); // Tiêu chí sắp xếp
+  const [showSortDropdown, setShowSortDropdown] = useState(false); // Hiển thị dropdown sắp xếp
 
+  // Hàm chuyển đổi giá từ chuỗi thành số
   const parsePrice = (priceString) => {
-    // Kiểm tra nếu priceString là chuỗi, nếu không thì trả về 0 hoặc giá trị mặc định
     if (typeof priceString === "string") {
+      // Xóa ký tự không phải số trong chuỗi giá
       return parseInt(priceString.replace(/[^0-9]/g, ""), 10);
     } else if (typeof priceString === "number") {
-      // Nếu priceString đã là số, không cần xử lý, chỉ trả về giá trị đó
+      // Nếu là số, trả về giá trị đó
       return priceString;
     } else {
-      // Trường hợp priceString không hợp lệ (null, undefined, v.v.), trả về giá trị mặc định
+      // Nếu không hợp lệ, trả về 0
       return 0;
     }
   };
 
-  // Hàm xử lý khi thay đổi checkbox
+  // Hàm xử lý khi thay đổi checkbox category
   const handleCategoryChange = (category) => {
+    // Kiểm tra nếu category đã có trong danh sách selectedCategories
     if (selectedCategories.includes(category)) {
+      // Xóa category khỏi selectedCategories nếu đã có
       setSelectedCategories(
         selectedCategories.filter((cat) => cat !== category)
       );
     } else {
+      // Thêm category vào selectedCategories nếu chưa có
       setSelectedCategories([...selectedCategories, category]);
     }
   };
 
-  // Lấy tất cả các danh mục từ dữ liệu
+  // Lấy tất cả các danh mục từ dữ liệu sản phẩm mà không trùng lặp
   const allCategories = [...new Set(list.map((item) => item.category))];
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc
+  // Hàm lọc sản phẩm dựa trên các tiêu chí đã chọn
   const filteredProducts = list.filter((product) => {
-    const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
+    const productPrice = parsePrice(product.price); // Chuyển đổi giá sản phẩm thành số
 
-    // Lọc theo category
+    // Kiểm tra nếu sản phẩm thuộc một trong các danh mục đã chọn
     const matchesCategory =
       selectedCategories.length > 0
         ? selectedCategories.includes(product.category)
         : true;
 
-    // Lọc theo khoảng giá
+    // Kiểm tra nếu giá sản phẩm nằm trong khoảng giá đã chọn
     const matchesPrice =
       (minPrice ? productPrice >= parsePrice(minPrice) : true) &&
       (maxPrice ? productPrice <= parsePrice(maxPrice) : true);
 
-    // Lọc theo name (Tên sản phẩm)
+    // Kiểm tra nếu tên sản phẩm có chứa chuỗi tìm kiếm
     const matchesName = nameFilter
       ? product.name.toLowerCase().includes(nameFilter.toLowerCase())
       : true;
 
+    // Trả về sản phẩm nếu thỏa mãn tất cả các điều kiện
     return matchesCategory && matchesPrice && matchesName;
   });
 
-  // Sắp xếp sản phẩm theo sortBy
+  // Sắp xếp sản phẩm dựa trên giá trị sortBy
   const sortedProducts = filteredProducts.sort((a, b) => {
     switch (sortBy) {
       case "Sort by Price: ↑":
+        // Sắp xếp theo giá tăng dần
         return parsePrice(a.price) - parsePrice(b.price);
       case "Sort by Price: ↓":
+        // Sắp xếp theo giá giảm dần
         return parsePrice(b.price) - parsePrice(a.price);
-      case "Sort by Rated":
+      case "Sắp Xếp":
+        // Sắp xếp theo đánh giá giảm dần
         return b.reviews - a.reviews;
       default:
         return 0;
@@ -110,7 +118,7 @@ const Product = ({ onUpdateWishlistCount }) => {
               <div>
                 <img src={map} alt="map" style={{ width: "100%" }} />
               </div>
-              <p class="filter-title">Categories</p>
+              <p className="filter-title">Khu Vực</p>
               <div>
                 <p
                   className="filter-title"
@@ -140,63 +148,64 @@ const Product = ({ onUpdateWishlistCount }) => {
               </div>
             </div>
 
-            {/* Lọc theo giá */}
+            {/* Lọc theo giá (giá tối thiểu) */}
             <div className="filter-item">
               <Icon>
                 <img src={pricedown} />
               </Icon>
               <div>
-                <p className="filter-title">Price</p>
+                <p className="filter-title">Giá</p>
                 <label>
-                  From: {minPrice.toLocaleString()}$
+                  Từ: {minPrice.toLocaleString()} vnđ
                   <input
                     type="range"
                     min="0"
-                    max="3000"
+                    max="3000000"
                     value={minPrice}
                     onChange={(e) => setMinPrice(Number(e.target.value))}
-                    step="1000"
+                    step="1000000"
                     className="slider"
                   />
                 </label>
               </div>
             </div>
 
+            {/* Lọc theo giá (giá tối đa) */}
             <div className="filter-item">
               <Icon>
                 <img src={priceup} />
               </Icon>
               <div>
-                <p className="filter-title">Price</p>
+                <p className="filter-title">Giá</p>
                 <label>
-                  To: {maxPrice.toLocaleString()}$
+                  Đến: {maxPrice.toLocaleString()} vnđ
                   <input
                     type="range"
-                    min="10000"
-                    max="50000"
+                    min="5000000"
+                    max="10000000"
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Number(e.target.value))}
-                    step="10000"
+                    step="5000000"
                     className="slider"
                   />
                 </label>
               </div>
             </div>
 
-            {/* Tìm kiếm sản phẩm */}
+            {/* Tìm kiếm sản phẩm theo tên */}
             <div className="search-bar">
               <Icon>
                 <img src={search} />
               </Icon>
               <input
                 className="filter-description"
-                placeholder="Product name"
+                placeholder="Tìm theo tên"
                 value={nameFilter}
-                onChange={(e) => setNameFilter(e.target.value)} // Cập nhật giá trị lọc theo tên
+                onChange={(e) => setNameFilter(e.target.value)} // Cập nhật chuỗi tìm kiếm
               />
             </div>
 
-            {/* Bộ lọc sắp xếp */}
+            {/* Bộ lọc sắp xếp sản phẩm */}
             <div className="sort-wrapper">
               <p
                 className="filter-title"
@@ -206,25 +215,26 @@ const Product = ({ onUpdateWishlistCount }) => {
                 {sortBy} <span>{showSortDropdown ? "▲" : "▼"}</span>
               </p>
 
+              {/* Hiển thị dropdown sắp xếp khi nhấn vào */}
               {showSortDropdown && (
                 <div className="dropdown-content">
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sort by Rated")}
+                    onClick={() => setSortBy("Sắp Xếp")}
                   >
-                    Sort by Rated
+                    Tất Cả
                   </div>
                   <div
                     className="dropdown-item"
                     onClick={() => setSortBy("Sort by Price: ↑")}
                   >
-                    Sort by Price: ↑
+                    Sắp xếp theo giá: ↑
                   </div>
                   <div
                     className="dropdown-item"
                     onClick={() => setSortBy("Sort by Price: ↓")}
                   >
-                    Sort by Price: ↓
+                    Sắp xếp theo giá: ↓
                   </div>
                 </div>
               )}
@@ -232,7 +242,7 @@ const Product = ({ onUpdateWishlistCount }) => {
           </div>
         </div>
 
-        {/* Danh sách sản phẩm */}
+        {/* Danh sách sản phẩm đã lọc và sắp xếp */}
         <div className="container recent">
           <AllProduct
             products={sortedProducts}
@@ -246,7 +256,7 @@ const Product = ({ onUpdateWishlistCount }) => {
 
 export default Product;
 
-// Icon styled component
+// Styled component cho phần biểu tượng
 const Icon = styled.div`
   img {
     width: 100%;

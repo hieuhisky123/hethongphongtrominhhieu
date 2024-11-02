@@ -9,14 +9,14 @@ import av5 from "../../acsset/slice/avatar4.png";
 import { useState } from "react";
 
 const Reviews = () => {
-  const [textvalue, setTextvalue] =  useState("");
+  const [textvalue, setTextvalue] = useState("");
   const [comments, setComments] = useState([]);
   console.log("text", textvalue);
   console.log("textvalue", comments);
   const handleSendComment = () => {
     if (textvalue.trim()) {
-      setComments([...comments, textvalue]); 
-      setTextvalue(""); 
+      setComments([...comments, textvalue]);
+      setTextvalue("");
     }
   };
   return (
@@ -36,14 +36,18 @@ const Reviews = () => {
               </Imgutem>
             );
           })}
-          <textarea placeholder="Enter your comment" onChange={(e)=>{setTextvalue(e.target.value)}}/>
+          <textarea
+            placeholder="Enter your comment"
+            onChange={(e) => {
+              setTextvalue(e.target.value);
+            }}
+          />
           <Butonky>
             {/* <button onClick={handleSendComment}>Send</button> */}
           </Butonky>
         </TitlePaner>
       </Container>
       <SllTy>
-        
         {contenq?.map((item, index) => {
           return (
             <ContenWap>
@@ -62,9 +66,9 @@ const Reviews = () => {
           );
         })}
       </SllTy>
-    <Duyts>
-    <span>see more</span>
-    </Duyts>
+      <Duyts>
+        <span>Xem Thêm</span>
+      </Duyts>
     </Wapper>
   );
 };
@@ -114,36 +118,36 @@ const contenq = [
   },
 ];
 const Duyts = styled.div`
-    &:hover{
-        span{
-            color: #000;
-            transform: scale(1.02);
-            cursor: pointer;
-            transition: all 0.25s linear;
-        }
+  &:hover {
+    span {
+      color: #000;
+      transform: scale(1.02);
+      cursor: pointer;
+      transition: all 0.25s linear;
     }
+  }
   span {
-    color: var(--Primary, #B88E2F);
-text-align: center;
-font-family: "Work Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 600;
-line-height: 150%; /* 24px */
-border: 1px solid var(--Primary, #B88E2F);
-background: var(--Color-White, #FFF);
-padding: 7px 10px;
+    color: var(--Primary, #b88e2f);
+    text-align: center;
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    border: 1px solid var(--Primary, #b88e2f);
+    background: var(--Color-White, #fff);
+    padding: 7px 10px;
   }
 `;
 const Wapper = styled.div`
   width: 100%;
   max-width: 1440px;
   margin: 0px auto;
-  :hover{
-        span{
-            transform: scale(1.02);
-        }
+  :hover {
+    span {
+      transform: scale(1.02);
     }
+  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -229,11 +233,11 @@ const ContenWap = styled.div`
     letter-spacing: -0.16px;
   }
   @media screen and (min-width: 320px) and (max-width: 760px) {
-width: 100%;
-padding: 10px 0px;
-p{
-    font-size: 16px;
-}
+    width: 100%;
+    padding: 10px 0px;
+    p {
+      font-size: 16px;
+    }
   }
 `;
 const ImgRIght = styled.div`
@@ -251,12 +255,12 @@ const Textp = styled.div`
   display: flex;
   text-align: left;
   gap: 10px;
-  img{
-   width: 30%;
+  img {
+    width: 30%;
   }
   @media screen and (min-width: 320px) and (max-width: 760px) {
-    p{
-        font-size: 16px;
+    p {
+      font-size: 16px;
     }
   }
 `;

@@ -13,43 +13,53 @@ import {
   FaQuoteLeft,
 } from "react-icons/fa";
 import Ourteam from "../home/ourteam";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const About = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 });
     const handleScroll = () => {
       AOS.refresh();
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <Container>
       <TitleSection>
-        <SubTitle>FURNITURE STORE</SubTitle>
-        <MainTitle>We are one of Vietnam’s most trusted partner <br/>for exceptional design solutions</MainTitle>
+        <SubTitle>
+          HỆ THỐNG CHO THUÊ PHÒNG TRỌ UY TÍN CHO SINH VIÊN TẠI TP.HCM
+        </SubTitle>
+        <MainTitle>
+          Mang đến giải pháp nhà ở giá rẻ, sạch sẽ và tiện nghi cho sinh viên.{" "}
+          <br />
+        </MainTitle>
       </TitleSection>
 
       <ImageGallery>
-        <GalleryImage src={about1} alt="Image 1" data-aos="fade-right"/>
+        <GalleryImage src={about1} alt="Image 1" data-aos="fade-right" />
         <GalleryImage src={about2} alt="Image 2" />
-        <GalleryImage src={about3} alt="Image 3" data-aos="fade-left"/>
+        <GalleryImage src={about3} alt="Image 3" data-aos="fade-left" />
       </ImageGallery>
 
       <ServiceSection>
-        <ServiceTitle data-aos="fade-left">What We Do</ServiceTitle>
+        <ServiceTitle data-aos="fade-left">Về Chúng Tôi</ServiceTitle>
         <ServiceGrid>
           <ServiceCard data-aos="fade-up-right">
             <ServiceIcon>
               <FaLightbulb />
             </ServiceIcon>
-            <ServiceHeading>PLANNING</ServiceHeading>
+            <ServiceHeading>LẬP KẾ HOẠCH</ServiceHeading>
             <ServiceDescription>
-            A well-structured interior design plan begins with defining the overall vision and style for the space. Key elements include selecting a color palette, choosing furniture and decor that align with the aesthetic, and ensuring functionality. Incorporating natural light and optimizing layout are essential for creating a harmonious environment. Regular evaluations throughout the process ensure the design remains cohesive and meets the client’s needs.
-
+              Hệ thống cho thuê phòng trọ sinh viên bắt đầu từ việc lên kế hoạch
+              chi tiết, định hướng phong cách và tiêu chuẩn cho từng phòng. Yếu
+              tố quan trọng bao gồm việc chọn màu sắc, nội thất và trang trí phù
+              hợp với nhu cầu của sinh viên. Đảm bảo phòng có đầy đủ tiện nghi,
+              sáng sủa và thoáng mát là ưu tiên hàng đầu. Việc đánh giá chất
+              lượng định kỳ giúp duy trì sự hài lòng của sinh viên và đáp ứng
+              được các yêu cầu từ phía khách thuê.
             </ServiceDescription>
             {/* <ServiceLink href="#">check our service →</ServiceLink> */}
           </ServiceCard>
@@ -58,9 +68,14 @@ const About = () => {
             <ServiceIcon>
               <FaPencilRuler />
             </ServiceIcon>
-            <ServiceHeading>INTERIOR DESIGN</ServiceHeading>
+            <ServiceHeading>THIẾT KẾ PHÒNG TRỌ</ServiceHeading>
             <ServiceDescription>
-            Interior design harmonizes aesthetics and functionality, creating spaces that reflect personal style and enhance daily living. By carefully selecting colors, furniture, and decor, designers transform rooms into inviting environments. A successful design considers layout, lighting, and comfort, ensuring each area is both beautiful and practical for everyday use
+              Thiết kế phòng trọ của hệ thống tập trung vào sự tiện nghi và
+              thoải mái cho sinh viên. Không gian được bài trí hài hòa với màu
+              sắc và nội thất phù hợp, mang lại cảm giác gần gũi như ở nhà. Bố
+              trí ánh sáng, không gian học tập và khu vực nghỉ ngơi đều được
+              tính toán để tạo nên môi trường lý tưởng cho việc học tập và sinh
+              hoạt của sinh viên.
             </ServiceDescription>
             {/* <ServiceLink href="#">check our service →</ServiceLink> */}
           </ServiceCard>
@@ -69,23 +84,32 @@ const About = () => {
             <ServiceIcon>
               <FaTools />
             </ServiceIcon>
-            <ServiceHeading>CONSTRUCTION</ServiceHeading>
+            <ServiceHeading>XÂY DỰNG VÀ HOÀN THIỆN</ServiceHeading>
             <ServiceDescription>
-            Interior construction involves turning design ideas into reality, including installation, decoration, and finishing of spaces. The construction team must ensure material quality, adhere to design plans, and meet deadlines, creating a harmonious and comfortable living environment for users.
+              Quá trình xây dựng và hoàn thiện phòng trọ bao gồm các công đoạn
+              lắp đặt, trang trí và hoàn thiện nội thất. Đội ngũ thi công đảm
+              bảo chất lượng vật liệu và tuân thủ nghiêm ngặt các tiêu chuẩn
+              thiết kế, đáp ứng tiến độ để sẵn sàng đón sinh viên vào ở. Phòng
+              trọ được chuẩn bị kỹ lưỡng nhằm tạo nên môi trường sống sạch sẽ,
+              thoáng mát và an toàn cho sinh viên.
             </ServiceDescription>
             {/* <ServiceLink href="#">check our service →</ServiceLink> */}
           </ServiceCard>
         </ServiceGrid>
 
-        <ServiceGrid  data-aos="fade-down-left">
+        <ServiceGrid data-aos="fade-down-left">
           <ServiceCard>
             <ServiceIcon>
               <FaHome />
             </ServiceIcon>
-            <ServiceHeading>REMODELING</ServiceHeading>
+            <ServiceHeading>CẢI TẠO PHÒNG TRỌ</ServiceHeading>
             <ServiceDescription>
-              
-Interior renovation improves and refreshes living spaces, from replacing damaged materials to updating decor styles. This process enhances aesthetics while ensuring functionality, providing comfort and convenience for users. It allows homeowners to create an inviting atmosphere that reflects their personal taste and lifestyle.
+              Quá trình cải tạo phòng trọ giúp làm mới không gian sống, từ việc
+              thay thế các vật liệu cũ hư hỏng cho đến cập nhật phong cách trang
+              trí. Điều này không chỉ nâng cao tính thẩm mỹ mà còn đảm bảo tiện
+              nghi, mang lại sự thoải mái cho sinh viên. Việc cải tạo giúp sinh
+              viên có một môi trường sống sạch sẽ, an toàn, phù hợp với lối sống
+              của họ.
             </ServiceDescription>
             {/* <ServiceLink href="#">check our service →</ServiceLink> */}
           </ServiceCard>
@@ -94,9 +118,14 @@ Interior renovation improves and refreshes living spaces, from replacing damaged
             <ServiceIcon>
               <FaChair />
             </ServiceIcon>
-            <ServiceHeading>FURNITURE</ServiceHeading>
+            <ServiceHeading>NỘI THẤT PHÒNG TRỌ</ServiceHeading>
             <ServiceDescription>
-            Furniture arrangement is the process of organizing and positioning furnishings in a living space effectively and aesthetically. This not only optimizes usable area but also creates balance and harmony, resulting in a comfortable and inviting atmosphere for users. Thoughtful layout enhances both functionality and style in any room.
+              Bố trí nội thất phòng trọ là quá trình sắp xếp và bố trí các vật
+              dụng một cách hợp lý và hài hòa. Điều này không chỉ tối ưu hóa
+              không gian sử dụng mà còn tạo ra sự cân bằng và tiện nghi, mang
+              lại cảm giác dễ chịu cho sinh viên. Thiết kế cẩn thận giúp không
+              gian phòng vừa đẹp vừa tiện lợi, phục vụ tốt cho nhu cầu học tập
+              và sinh hoạt hàng ngày.
             </ServiceDescription>
             {/* <ServiceLink href="#">check our service →</ServiceLink> */}
           </ServiceCard>
@@ -104,43 +133,58 @@ Interior renovation improves and refreshes living spaces, from replacing damaged
             <ServiceIcon>
               <FaTree />
             </ServiceIcon>
-            <ServiceHeading>OUTDOOR</ServiceHeading>
+            <ServiceHeading>KHU VỰC NGOÀI TRỜI</ServiceHeading>
             <ServiceDescription>
-           Outdoor interior design creates relaxing and comfortable living spaces that connect people with nature. By using weather-resistant materials, durable furnishings, and greenery, outdoor areas transform into ideal spots for gatherings, entertainment, and relaxation in a fresh atmosphere. Thoughtful design enhances the enjoyment of outdoor living experiences.
+              Không gian ngoài trời của hệ thống phòng trọ mang đến khu vực thư
+              giãn thoáng mát, gần gũi với thiên nhiên. Sử dụng vật liệu bền bỉ,
+              cây xanh và đồ nội thất ngoài trời, các khu vực này trở thành nơi
+              lý tưởng để sinh viên thư giãn, học nhóm, hoặc tổ chức các buổi
+              gặp gỡ, mang lại không khí trong lành và thoải mái.
             </ServiceDescription>
             {/* <ServiceLink href="#">check our service →</ServiceLink> */}
           </ServiceCard>
         </ServiceGrid>
       </ServiceSection>
-      <Ourteam />
+      {/* <Ourteam /> */}
       <TestimonialSection>
-        <TestimonialTitle data-aos="flip-left">Testimonial</TestimonialTitle>
+        <TestimonialTitle data-aos="flip-left">
+          Một số đánh giá từ khách hàng
+        </TestimonialTitle>
         <TestimonialGrid>
           <TestimonialCard data-aos="flip-left">
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-            The interior design is truly impressive, showcasing a perfect blend of style and functionality. Each space is thoughtfully arranged, creating a harmonious atmosphere that enhances both comfort and aesthetic appeal.
+              Thiết kế phòng trọ thực sự ấn tượng, kết hợp hoàn hảo giữa phong
+              cách và tính tiện dụng. Mỗi không gian đều được sắp xếp cẩn thận,
+              tạo nên bầu không khí hài hòa, nâng cao sự thoải mái và tính thẩm
+              mỹ.
             </TestimonialText>
-            <TestimonialAuthor>DIANNE RUSSELL</TestimonialAuthor>
-            <TestimonialInfo>Client - New York</TestimonialInfo>
+            <TestimonialAuthor>CHÂU HOÀNG AN</TestimonialAuthor>
+            <TestimonialInfo>Doanh Nhân - TP. Hồ Chí Minh</TestimonialInfo>
           </TestimonialCard>
 
           <TestimonialCard data-aos="flip-left">
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-            I am extremely satisfied with the design company's work. Their professionalism, creativity, and attention to detail exceeded my expectations, resulting in a beautiful space that perfectly reflects my style.
+              Tôi hoàn toàn hài lòng với dịch vụ của hệ thống cho thuê phòng
+              trọ. Sự chuyên nghiệp, sáng tạo và kỹ lưỡng trong từng chi tiết đã
+              vượt qua kỳ vọng của tôi, mang đến một không gian đẹp đẽ, đúng với
+              phong cách cá nhân của tôi.
             </TestimonialText>
-            <TestimonialAuthor>WADE WARREN</TestimonialAuthor>
-            <TestimonialInfo>Client - California</TestimonialInfo>
+            <TestimonialAuthor>VŨ THỊ HÀ THU</TestimonialAuthor>
+            <TestimonialInfo>Sinh viên - Đà Nẵng</TestimonialInfo>
           </TestimonialCard>
 
           <TestimonialCard data-aos="flip-left">
             <FaQuoteLeft className="quote-icon" />
             <TestimonialText>
-            I couldn’t be happier with the service provided by the design team. They listened to my ideas, offered valuable suggestions, and transformed my vision into reality. The final result is stunning and functional!
+              Tôi không thể hài lòng hơn với dịch vụ mà đội ngũ đã cung cấp. Họ
+              lắng nghe ý tưởng của tôi, đưa ra những gợi ý hữu ích và biến mong
+              muốn của tôi thành hiện thực. Kết quả cuối cùng thật tuyệt vời và
+              tiện lợi!
             </TestimonialText>
-            <TestimonialAuthor>CAMERON WILLIAMSON</TestimonialAuthor>
-            <TestimonialInfo>Client - Florida</TestimonialInfo>
+            <TestimonialAuthor>TRẦN QUANG HUY</TestimonialAuthor>
+            <TestimonialInfo>Sinh viên - TP. Hồ Chí Minh</TestimonialInfo>
           </TestimonialCard>
         </TestimonialGrid>
       </TestimonialSection>

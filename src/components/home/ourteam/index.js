@@ -115,7 +115,6 @@ const Ourteam = () => {
 export default Ourteam;
 
 const arrconten = [
-
   {
     img: avatar1,
     conten: "CEO",

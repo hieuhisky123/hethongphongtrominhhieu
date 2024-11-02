@@ -4,55 +4,52 @@ import styled from "styled-components";
 import pr1 from "../../../acsset/slice/pr1.png";
 import li1 from "../../../acsset/slice/li1.png";
 import { Link } from "react-router-dom";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 const RecentCard = ({ products }) => {
   useEffect(() => {
-    AOS.init({ duration: 1000});
+    AOS.init({ duration: 1000 });
     const handleScroll = () => {
       AOS.refresh();
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   AOS.init();
   console.log("dssadsa", list);
   return (
     <Wapper>
-      <TitleWaper data-aos="fade-up"
-     data-aos-anchor-placement="top-bottom">
-        <h1>Featured Products</h1>
+      <TitleWaper data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <h1>Phòng Mới Cập Nhật</h1>
         <Spanet>
-        <p>See More</p>
+          <p>Xem Thêm</p>
           <Link to={"/product"}>
-          <div>
-            <img src={li1}></img>
-          </div>
+            <div>
+              <img src={li1}></img>
+            </div>
           </Link>
         </Spanet>
       </TitleWaper>
-      <Container data-aos="fade-up"
-     data-aos-anchor-placement="center-bottom">
-        {
-        list?.slice(0,4).map((item, index) => {
-            return (
-              <ContainerAll>
-                <Link to={`/product/${item.id}`}>
-                  <img src={item.images[0]} />
-                  <div>
-                    <h1>{item.name}</h1>
-                  </div>
-                  <p>{item.price}</p>
+      <Container data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        {list?.slice(0, 4).map((item, index) => {
+          return (
+            <ContainerAll>
+              <Link to={`/product/${item.id}`}>
+                <img src={item.images[0]} />
+                <div>
+                  <h1>{item.name}</h1>
+                </div>
+                <p>{item.price}</p>
 
-                  <div>
-                    <button>{item.detail}</button>
-                  </div>
-                </Link>
-              </ContainerAll>
-            );
-          })}
+                <div>
+                  <button>{item.detail}</button>
+                </div>
+              </Link>
+            </ContainerAll>
+          );
+        })}
       </Container>
     </Wapper>
   );
@@ -65,25 +62,25 @@ const product = [
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "See More",
+    detaill: "Xem Thêm",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "See More",
+    detaill: "Xem Thêm",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "See More",
+    detaill: "Xem Thêm",
   },
   {
     img: pr1,
     title: "gế sofa",
     price: "$15.00",
-    detaill: "See More  ",
+    detaill: "Xem Thêm  ",
   },
 ];
 const Wapper = styled.div`
@@ -145,7 +142,7 @@ const ContainerAll = styled.div`
     background: var(--main-colors-green-05, #f6fff6);
     padding: 6.459px 12.918px;
   }
-  a{
+  a {
     display: flex;
     gap: 10px;
     flex-direction: column;

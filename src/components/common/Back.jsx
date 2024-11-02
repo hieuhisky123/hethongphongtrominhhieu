@@ -7,8 +7,7 @@ const Back = ({ icon1, icon2, icon3, icon4, title, cover }) => {
       <BackgroundImage src={cover} alt="background" />
       <Content>
         <Title>{title}</Title>
-        <Breadcrumb>Bring Serenity to Your Place
-        with Our Thoughtful Designs</Breadcrumb>
+        <Breadcrumb>Hệ Thống Nhà Trọ Minh Hiếu</Breadcrumb>
         <IconsContainer>
           <IconItem>
             <img src={icon1} alt="Living Room" />

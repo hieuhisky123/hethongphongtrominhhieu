@@ -15,9 +15,9 @@ const Sampledesign = () => {
     const handleScroll = () => {
       AOS.refresh();
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
@@ -27,8 +27,7 @@ const Sampledesign = () => {
           data-aos="fade-up"
           data-aos-anchor-placement="center-center"
         >
-          <h1>Product Sample</h1>
-          
+          <h1>Khu Vực</h1>
         </TitleConten>
         <Containerr>
           {arrimg?.map((item, index) => {
@@ -46,7 +45,7 @@ const Sampledesign = () => {
                         <img src={item.img} />
                         <BoderFt>
                           <Link to={item.link}>
-                            <h1>See More</h1>
+                            <h1>Xem Thêm</h1>
                           </Link>
                         </BoderFt>
                       </AllPaner>
@@ -76,7 +75,7 @@ const Sampledesign = () => {
                         <img src={item.img} />
                         <BoderFt>
                           <Link to={item.link}>
-                            <h1>See More</h1>
+                            <h1>Xem Thêm</h1>
                           </Link>
                         </BoderFt>
                       </AllPaner>
@@ -99,12 +98,12 @@ export default Sampledesign;
 const arrimg = [
   {
     img: sp1,
-    title: "Interior",
+    title: "Tân Bình",
     link: "/Interior",
   },
   {
     img: sp2,
-    title: "Illumination",
+    title: "Gò Vấp",
     link: "/illumination",
   },
 ];
@@ -112,18 +111,18 @@ const arrimg = [
 const iMT = [
   {
     img: sp3,
-    title: "Design",
-    link: "/interiordesign",
+    title: "Quận 3",
+    link: "/Interiordesign",
   },
 
   {
     img: sp4,
-    title: "Kitchen",
+    title: "Quận 1",
     link: "/roomkitchen",
   },
   {
     img: sp5,
-    title: "Bathroom",
+    title: "Bình Thạnh",
     link: "/bathroom",
   },
 ];
@@ -181,7 +180,7 @@ const Right = styled.div`
   gap: 10px;
   padding-top: 10px;
   overflow: hidden;
-  .ant-image-mask-info{
+  .ant-image-mask-info {
     position: absolute;
     top: 20%;
   }
@@ -240,7 +239,7 @@ const Container = styled.div`
   display: flex;
   gap: 20px;
   overflow: hidden;
-  .ant-image-mask-info{
+  .ant-image-mask-info {
     position: absolute;
     top: 20%;
   }

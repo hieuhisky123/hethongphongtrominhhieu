@@ -1,113 +1,130 @@
 export const nav = [
   {
-    text: "Home",
+    text: "Trang chủ",
     path: "/",
   },
   {
-    text: "About Us",
-    path: "/about",
-  },
-  {
-    text: "Products",
+    text: "Xem Phòng",
     path: "/product",
   },
 
   {
-    text: "Design",
+    text: "Thiết Kế",
     path: "/pricing",
   },
 
   {
-    text: "Contact",
+    text: "Liên Hệ",
     path: "/contact",
+  },
+  {
+    text: "Giới Thiệu",
+    path: "/about",
   },
 ];
 export const list = [
   {
     id: 1,
-    name: "Armchair Cabo",
-    price: "12.000$",
-    category: "Interior",
+    name: "103TT Cộng Hòa, P4, TP.HCM",
+    price: "3,900,000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Thang máy", "Máy giặt chung", "Ở được 3-4 người"], // Update to color codes
     shortDescription:
-      "The Armchair Cabo is designed with a compact form to save space. Its frame is made from durable walnut wood, while the seat cushion is upholstered in soft fabric, creating an overall elegant design. When paired with the Cabo Ottoman, the Armchair Cabo enhances comfort, making it perfect for reading or working.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "This modern accent chair is upholstered in high-quality leather, offering both comfort and style. The perfect addition to any living room, bedroom, or office space. With its sleek design and durable material, this chair will be a favorite for years to come.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+
     reviews: 12, // Add a field for customer reviews
-    sku: "NTA42005 KD1092-12", // Add a field for SKU
-    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    sku: "103", // Add a field for SKU
+    tags: ["Máy lạnh", "Tủ đồ", "Kệ Bếp"], // Add tags
     images: [
-      "../images/list/p-1.png", // Main image
-      "../images/list/p-2.png", // Thumbnail image
-      "../images/list/p-7.png", // Thumbnail image
+      "../images/list/103.1.jpg", // Main image
+      "../images/list/103.2.jpg", // Thumbnail image
+      "../images/list/103.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/p-2.png",
+    cover: "../images/list/103.4.jpg",
     relatedImages: [
-      "../images/list/p-7.png", // Related image 1
-      "../images/list/banbep2.jpg", // Related image 2
+      "../images/list/103.5.jpg", // Related image 1
+      "../images/list/103.1.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 2,
-    name: "Simple Sofa",
-    price: "13.000$",
-    category: "Interior",
+    name: "206TT Cộng Hòa, P4, TP.HCM",
+    price: "4.500.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Thang máy", "Máy giặt chung", "Ở được 3-4 người"], // Update to color codes
     shortDescription:
-      "The Simple Sofa embodies minimalist style, perfect for modern living spaces. Designed with clean and sleek lines, this sofa effortlessly blends into any setting while maintaining its elegance and sophistication.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Premium materials the frame is crafted from sturdy natural wood, ensuring long-lasting durability. The cushion is upholstered in soft fabric or leather, offering a comfortable seating experience. Versatile use with its moderate size, the Simple Sofa can be placed in various spaces, from the living room and office to the bedroom. Easy to match its neutral colors and design make the Simple Sofa easy to pair with other furniture, creating a modern yet cozy living space.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+
     reviews: 5, // Add a field for customer reviews
-    sku: "NTA220 KD101125", // Add a field for SKU
-    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    sku: "206", // Add a field for SKU
+    tags: ["Máy lạnh", "Tủ lạnh", "Giường", "Tủ đồ", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/sofa1.jpg", // Main image
-      "../images/list/sofa2.jpg", // Thumbnail image
-      "../images/list/sofa3.jpg", // Thumbnail image
+      "../images/list/206.1.jpg", // Main image
+      "../images/list/206.2.jpg", // Thumbnail image
+      "../images/list/206.6.jpg", // Thumbnail image
     ],
-    cover: "../images/list/sofa1.jpg",
+    cover: "../images/list/206.4.jpg",
     relatedImages: [
-      "../images/list/sofaL2.webp", // Related image 1
-      "../images/list/sofaL3.webp", // Related image 2
+      "../images/list/206.3.jpg", // Related image 1
+      "../images/list/206.5.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 3,
-    name: "Sofa L Zeus",
-    price: "18.800$",
-    category: "Interior",
+    name: "vip203TT Cộng Hòa, P4, TP.HCM",
+    price: "7.500.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Thang máy", "Máy giặt chung", "Ở được 3-4 người"], // Update to color codes
     shortDescription:
-      "The sofa is imported from a German company that has set up a manufacturing plant in China, with the entire production process following German standards. The sofa is upholstered in premium fabric with a specially designed structure that is resistant to water, stains, and liquid or oil-based spills. When liquids or stains are spilled on the surface of this fabric sofa, they bead up and roll off the surface, or can be easily absorbed with a paper towel or dry cloth, leaving virtually no trace behind.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "The fabric material of the premium COZY sofa is user-friendly, water-based, and non-toxic. It has undergone strict testing to ensure it does not contain harmful substances such as AEPO, NPEOs, OPEOs, formaldehyde, heavy metals, and phenols, all of which could be harmful to health. The surface material of this imported fabric sofa has been tested for outstanding abrasion resistance, with over 40,000 cycles using the Martindale method, which is commonly used to assess the durability of upholstery fabrics. COZY's smart water-resistant and antibacterial imported fabric sofa is perfect for families with young children, pets, or for hosting large gatherings with friends and family, both indoors and outdoors, thanks to its superior stain resistance, abrasion resistance, and excellent color retention.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 12, // Add a field for customer reviews
-    sku: "PMA42556 KD1214", // Add a field for SKU
-    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    sku: "Vip203", // Add a field for SKU
+    tags: [
+      "1PN",
+      "2WC",
+      "Máy lạnh",
+      "Giường, nệm",
+      "Tủ đồ",
+      "Bàn ghế",
+      "Máy giặt riêng",
+      "Sofa",
+    ], // Add tags
     images: [
-      "../images/list/sofaL1.webp", // Main image
-      "../images/list/sofaL2.webp", // Thumbnail image
-      "../images/list/sofaL3.webp", // Thumbnail image
+      "../images/list/vip203.1.jpg", // Main image
+      "../images/list/vip203.2.jpg", // Thumbnail image
+      "../images/list/vip203.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/sofaL1.webp",
+    cover: "../images/list/vip203.4.jpg",
     relatedImages: [
-      "../images/list/sofa1.jpg", // Related image 1
-      "../images/list/sofa3.jpg", // Related image 2
+      "../images/list/vip203.5.jpg", // Related image 1
+      "../images/list/vip203.6.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 4,
     name: "Leather Recliner Sofa",
     price: "14.800$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Luxury Japanese-Style Sofa: This single-seat sofa features an upright backrest and a high, comfortable headrest. The middle seat can be folded into a convenient coffee table, and the electric footrest provides easy adjustment for maximum relaxation.",
     longDescription:
@@ -125,15 +142,15 @@ export const list = [
       "../images/list/gheTG2.webp", // Related image 1
       "../images/list/gheTG1.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 5,
     name: "Mayo Recliner Chair",
     price: "2.700$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Mayo Swivel Chair: The Mayo Swivel Chair features a sleek, modern design with 360-degree rotation for flexible movement. The sofa is imported from a German company that operates a factory in China, following the entire production process according to German standards.",
     longDescription:
@@ -151,17 +168,17 @@ export const list = [
       "../images/list/gheDD1.webp", // Related image 1
       "../images/list/gheDD2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 6,
     name: "Horten Coffee Table",
     price: "4.800$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "The Horten Natural Marble Coffee Table features a minimalist design and is available in two colors: white and black. With its moderate size, it is well-suited for medium to large living room spaces.",
+      "The Horten Natural Marble Coffee Table features a minimalist design and is available in two utilities: white and black. With its moderate size, it is well-suited for medium to large living room spaces.",
     longDescription:
       "The coffee table is crafted from solid natural marble, available in white or black. It is coated with a moisture-resistant layer and a glossy lacquer finish to ensure durability and longevity. The table legs are made from the same natural marble material. Exclusive design, imported from a Hong Kong company with a manufacturing plant in China.",
     reviews: 6, // Add a field for customer reviews
@@ -177,15 +194,15 @@ export const list = [
       "../images/list/bantr1.jpg", // Related image 1
       "../images/list/bantr3.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 7,
     name: "Square Bed",
     price: "24.800$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "The Square Bed features a high, gently rounded headboard upholstered in soft, cool, and comfortable genuine leather. This design element adds both elegance and comfort to your bedroom, making it a standout piece in any modern decor.",
     longDescription:
@@ -203,19 +220,19 @@ export const list = [
       "../images/list/giuongM1.webp", // Related image 1
       "../images/list/giuongM2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 8,
     name: "Mikado Bed",
     price: "25.800$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "The Mikado Bed features a high, minimalist headboard designed with sturdy, block-like shapes. Despite its robust and architectural appearance, the bed remains soft and comfortable to the touch.",
     longDescription:
-      "The Mikado Bed features a high, minimalist headboard with a robust, block-like design that remains soft to the touch. Materials: Choose from genuine leather or smart, water-resistant, antibacterial fabric. The fabric options come in 11 antibacterial colors, while the leather is available in 69 colors and 4 different materials. Functionality: Designed with a concealed bed frame, the Mikado Bed includes a motorized lift mechanism that allows you to raise and lower the bed with a push-button, providing easy access to storage space beneath the bed. Additional Features: Comes with a long ottoman measuring 150x50x44 cm, featuring internal storage to optimize your bedroom space. Size: Ideal for medium to large bedrooms, offering a blend of style, comfort, and practicality.",
+      "The Mikado Bed features a high, minimalist headboard with a robust, block-like design that remains soft to the touch. Materials: Choose from genuine leather or smart, water-resistant, antibacterial fabric. The fabric options come in 11 antibacterial utilities, while the leather is available in 69 utilities and 4 different materials. Functionality: Designed with a concealed bed frame, the Mikado Bed includes a motorized lift mechanism that allows you to raise and lower the bed with a push-button, providing easy access to storage space beneath the bed. Additional Features: Comes with a long ottoman measuring 150x50x44 cm, featuring internal storage to optimize your bedroom space. Size: Ideal for medium to large bedrooms, offering a blend of style, comfort, and practicality.",
     reviews: 13, // Add a field for customer reviews
     sku: " GNU52551 KD2553-224", // Add a field for SKU
     tags: ["Furniture", "bed", "Modern"], // Add tags
@@ -229,20 +246,20 @@ export const list = [
       "../images/list/giuong1.webp", // Related image 1
       "../images/list/giuong2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
 
   {
     id: 10,
     name: "Historian Display Cabinet",
     price: "12.800$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "For those who appreciate classic, luxurious designs, the Historian Display Cabinet is the perfect choice that meets both aesthetic and functional needs.",
     longDescription:
-      "The Historian Display Cabinet combines classic elegance with practical functionality, making it an ideal addition to any bedroom. Top Surface: Features a wide top panel covered in premium black tempered glass, known for its strength and durability, allowing you to place lightweight items without affecting the exterior material. Body: Constructed from wood and upholstered in soft Eco Leather, ensuring a luxurious feel. The cabinet includes two large compartments for optimal storage, making it practical for organizing your space. Legs: The cabinet stands on high-quality, rust-resistant metal legs, providing durability and stability. Customization: Available in a range of colors, allowing you to coordinate the Historian Display Cabinet with the Historia Bed for a unified look. Size: Designed with a moderate size to fit seamlessly into any bedroom, enhancing both functionality and style. Combining the Historian Display Cabinet with the Historia Bed will elevate the sophistication of your bedroom space.",
+      "The Historian Display Cabinet combines classic elegance with practical functionality, making it an ideal addition to any bedroom. Top Surface: Features a wide top panel covered in premium black tempered glass, known for its strength and durability, allowing you to place lightweight items without affecting the exterior material. Body: Constructed from wood and upholstered in soft Eco Leather, ensuring a luxurious feel. The cabinet includes two large compartments for optimal storage, making it practical for organizing your space. Legs: The cabinet stands on high-quality, rust-resistant metal legs, providing durability and stability. Customization: Available in a range of utilities, allowing you to coordinate the Historian Display Cabinet with the Historia Bed for a unified look. Size: Designed with a moderate size to fit seamlessly into any bedroom, enhancing both functionality and style. Combining the Historian Display Cabinet with the Historia Bed will elevate the sophistication of your bedroom space.",
     reviews: 4, // Add a field for customer reviews
     sku: " TUG2534 HF2512-35", // Add a field for SKU
     tags: ["Furniture", "Cabinet", "Modern"], // Add tags
@@ -256,19 +273,19 @@ export const list = [
       "../images/list/tuH1.jpg", // Related image 1
       "../images/list/tuH2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 11,
     name: "Cassie Decorative Cabinet",
     price: "9.800$",
-    category: "Interior",
+    category: "Tân Bình",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "The Cassie Nightstand is designed in a minimalist style that highlights the luxurious Eco Leather material, creating a high-end furniture piece that stands out in any bedroom.",
     longDescription:
-      "The Cassie Nightstand is a testament to minimalist elegance, crafted to showcase the beauty of premium Eco Leather. Construction: The top, body, and exterior compartments are made from wood and upholstered in soft Eco Leather. This design allows you to place lightweight items on the surface without affecting the quality of the upholstery. Customization: Available in a variety of colors, enabling you to coordinate the Cassie Nightstand with the Casa Bed for a cohesive look. Legs: Features metal legs finished in a sleek black, complementing the minimalist design. Size: Designed with a moderate size to fit seamlessly into any bedroom space. Style: Combining the Cassie Nightstand with the Casa Bed will elevate the sophistication of your bedroom, adding a touch of luxury and refinement",
+      "The Cassie Nightstand is a testament to minimalist elegance, crafted to showcase the beauty of premium Eco Leather. Construction: The top, body, and exterior compartments are made from wood and upholstered in soft Eco Leather. This design allows you to place lightweight items on the surface without affecting the quality of the upholstery. Customization: Available in a variety of utilities, enabling you to coordinate the Cassie Nightstand with the Casa Bed for a cohesive look. Legs: Features metal legs finished in a sleek black, complementing the minimalist design. Size: Designed with a moderate size to fit seamlessly into any bedroom space. Style: Combining the Cassie Nightstand with the Casa Bed will elevate the sophistication of your bedroom, adding a touch of luxury and refinement",
     reviews: 3, // Add a field for customer reviews
     sku: " TUG2231 HF24512-55", // Add a field for SKU
     tags: ["Furniture", "Cabinet", "Modern"], // Add tags
@@ -282,19 +299,19 @@ export const list = [
       "../images/list/tu1.png", // Related image 1
       "../images/list/tu2.png", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 12,
     name: "Decorative Lights",
     price: "1.000$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "For smaller spaces such as living rooms, dining areas, or rooms with low ceilings, ceiling lights are an ideal choice. Especially with the Modern Pendant Light that we are introducing, you’re sure to be impressed.",
     longDescription:
-      "Modern Pendant Lamp is designed with the image of crystal flowers floating through a circle, with the highlight being the crystal flowers that are delicately cut by artisans as if brought to life under LED light, becoming magically sparkling in your interior space. The crystal chandelier is a combination of the material between the shaped stainless steel frame and crystal beads. With the combination of high-quality materials, the lamp is a great ceiling decoration product for customers, helping to bring a sense of elegance and nobility. This is a type of lamp that is favored by many consumers because it has high durability and can be designed according to requirements to adapt to many spaces with different areas.",
+      "Modern Pendant Lamp is designed with the image of crystal flowers floating through a circle, with the highlight being the crystal flowers that are delicately cut by artisans as if brought to life under LED light, becoming magically sparkling in your Tân Bình space. The crystal chandelier is a combination of the material between the shaped stainless steel frame and crystal beads. With the combination of high-quality materials, the lamp is a great ceiling decoration product for customers, helping to bring a sense of elegance and nobility. This is a type of lamp that is favored by many consumers because it has high durability and can be designed according to requirements to adapt to many spaces with different areas.",
     reviews: 6, // Add a field for customer reviews
     sku: " TUG2231 HF24512-55", // Add a field for SKU
     tags: ["Furniture", "Light", "Modern"], // Add tags
@@ -309,16 +326,16 @@ export const list = [
       "../images/list/dennt1.jpg", // Related image 1
       "../images/list/denpl1.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
 
   {
     id: 13,
     name: "Crystal Lamp",
     price: "800$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "As society continues to evolve, decorative elements like crystal chandeliers are increasingly valued. These chandeliers are not just functional lighting fixtures but also reflect the personality and aesthetic taste of the homeowner.",
     longDescription:
@@ -337,15 +354,15 @@ export const list = [
       "../images/list/dentha1.jpg", // Related image 1
       "../images/list/dennt1.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 14,
     name: "Wall Lamp",
     price: "1.000$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Modern Wall Lamp is the ideal choice for those who are looking for a unique and convenient highlight for their living space. With its beautiful design and flexible features, it will bring your space a modern and warm beauty.",
     longDescription:
@@ -364,15 +381,15 @@ export const list = [
       "../images/list/dennt1.jpg", // Related image 1
       "../images/list/denpl2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 15,
     name: "Table1 Lamp",
     price: "500$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Decorative table lamps are a very popular table lamp model today, can be used for bedrooms, living rooms, and desks. Modern, sophisticated design turns the lamp into a highlight for the room.",
     longDescription:
@@ -391,15 +408,15 @@ export const list = [
       "../images/list/denb1.jpeg", // Related image 1
       "../images/list/denb2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 16,
     name: "Table 2 Lamp",
     price: "500$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Decorative table lamps are used in offices, study rooms, decoration rooms, etc., contributing to bringing a more luxurious and classy beauty to the space, safe for the user's eyes.",
     longDescription:
@@ -418,15 +435,15 @@ export const list = [
       "../images/list/denban1.jpg", // Related image 1
       "../images/list/denban2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 17,
     name: "Outdoor lights 1 ",
     price: "1.200$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "With a neoclassical style and many sophisticated design lines, wall lamps bring to your space a luxurious, noble and classy beauty. Let's learn more about wall lamps in the article below!",
     longDescription:
@@ -445,15 +462,15 @@ export const list = [
       "../images/list/dentnt1.jpg", // Related image 1
       "../images/list/dentnt2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 18,
     name: "Outdoor lights 2 ",
     price: "8.000$",
-    category: "Illumination",
+    category: "Gò Vấp",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Have you ever been immersed in the magical beauty of ancient European streets, where the bright yellow lanterns illuminate the mossy stone walls? Or have you ever been fascinated by the magnificent castles with elaborate, splendid wall lamps? If so, try bringing that classic and luxurious beauty into your home with classic style wall lamps.",
     longDescription:
@@ -472,19 +489,19 @@ export const list = [
       "../images/list/dennt1.jpg", // Related image 1
       "../images/list/dennt2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 19,
     name: "Carpet 1 ",
     price: "550$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Country of origin: Türkiye. Trusted by many people because the carpet material is very good, the way the carpet is woven directly to the base creates durability and firmness for the product.",
     longDescription:
-      "This Turkish carpet product will make your living room and bedroom space become luxurious, classy and cozy, more harmonious than ever. Suitable for all designs with many different interior items, creating an impressive and harmonious style for the living room or bedroom space. Material: Synthetic Fiber (Polypropylene + Polyester). European point weaving technology. The product meets German Oeko-Tex 100 quality standards. Long-term use and easy to clean or clean normally. The carpet is used to decorate a variety of living rooms or bedrooms with impressive and very beautiful and luxurious color patterns. The carpet's fur is woven to create firmness and the base has good grip on the floor, so it does not move during use. The carpet is carefully selected from raw materials to the production stage, so it is very safe for users as well as ensuring strict standards from the manufacturer at the Turkish carpet factory.",
+      "This Turkish carpet product will make your living room and bedroom space become luxurious, classy and cozy, more harmonious than ever. Suitable for all designs with many different Quận 3 items, creating an impressive and harmonious style for the living room or bedroom space. Material: Synthetic Fiber (Polypropylene + Polyester). European point weaving technology. The product meets German Oeko-Tex 100 quality standards. Long-term use and easy to clean or clean normally. The carpet is used to decorate a variety of living rooms or bedrooms with impressive and very beautiful and luxurious color patterns. The carpet's fur is woven to create firmness and the base has good grip on the floor, so it does not move during use. The carpet is carefully selected from raw materials to the production stage, so it is very safe for users as well as ensuring strict standards from the manufacturer at the Turkish carpet factory.",
     reviews: 4, // Add a field for customer reviews
     sku: " THA1124 TH034-422", // Add a field for SKU
     tags: ["Furniture", "Carpet", "Modern"], // Add tags
@@ -499,20 +516,20 @@ export const list = [
       "../images/list/thamts1.jpg", // Related image 1
       "../images/list/thamts3.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
 
   {
     id: 21,
     name: "Carpet 2 ",
     price: "600$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Country of origin: Türkiye. Trusted by many people because the carpet material is very good, the way the carpet is woven directly to the base creates durability and firmness for the product.",
     longDescription:
-      "This Turkish carpet product will make your living room and bedroom space become luxurious, classy and cozy, more harmonious than ever. Suitable for all designs with many different interior items, creating an impressive and harmonious style for the living room or bedroom space. Material: Synthetic Fiber (Polypropylene + Polyester). European point weaving technology. The product meets German Oeko-Tex 100 quality standards. Long-term use and easy to clean or clean normally. The carpet is used to decorate a variety of living rooms or bedrooms with impressive and very beautiful and luxurious color patterns. The carpet's fur is woven to create firmness and the base has good grip on the floor, so it does not move during use. The carpet is carefully selected from raw materials to the production stage, so it is very safe for users as well as ensuring strict standards from the manufacturer at the Turkish carpet factory.",
+      "This Turkish carpet product will make your living room and bedroom space become luxurious, classy and cozy, more harmonious than ever. Suitable for all designs with many different Quận 3 items, creating an impressive and harmonious style for the living room or bedroom space. Material: Synthetic Fiber (Polypropylene + Polyester). European point weaving technology. The product meets German Oeko-Tex 100 quality standards. Long-term use and easy to clean or clean normally. The carpet is used to decorate a variety of living rooms or bedrooms with impressive and very beautiful and luxurious color patterns. The carpet's fur is woven to create firmness and the base has good grip on the floor, so it does not move during use. The carpet is carefully selected from raw materials to the production stage, so it is very safe for users as well as ensuring strict standards from the manufacturer at the Turkish carpet factory.",
     reviews: 4, // Add a field for customer reviews
     sku: " THA651 TH034-12", // Add a field for SKU
     tags: ["Furniture", "Carpet", "Modern"], // Add tags
@@ -527,15 +544,15 @@ export const list = [
       "../images/list/tham1.jpg", // Related image 1
       "../images/list/tham3.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 22,
     name: "Rainbow Curtains",
     price: "300$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Description: When you love a light-filled room but occasionally need privacy, Korean rainbow combi blinds are the perfect solution. Designed with alternating sheer and semi-opaque fabrics, rainbow combi blinds are made with two parallel layers of fabric allowing for complete light control. Close and align the sheer and sheer strips to achieve the different levels of light into the room you want.",
     longDescription:
@@ -554,15 +571,15 @@ export const list = [
       "../images/list/tranh1.webp", // Related image 1
       "../images/list/tranh2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 23,
     name: "Buddha Hanging Painting",
     price: "700$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "Buddhist wall art offers a serene and contemplative addition to any space, reflecting the spiritual essence and profound wisdom of Buddhism. These artworks often feature intricate depictions of Buddhist symbols, deities, and serene landscapes, designed to inspire peace and mindfulness",
     longDescription:
@@ -581,15 +598,15 @@ export const list = [
       "../images/list/tranhtr1.webp", // Related image 1
       "../images/list/tranhtr2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 24,
     name: "Eight Horses Painting",
     price: "600$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "The Eight Horses painting is a revered symbol of good fortune and prosperity in East Asian culture. Depicting eight powerful horses galloping energetically, this artwork embodies the dynamic spirit of success and progress. The number eight is considered highly auspicious, representing wealth and ambition.",
     longDescription:
@@ -608,15 +625,15 @@ export const list = [
       "../images/list/tranh1.webp", // Related image 1
       "../images/list/tranh2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 25,
     name: "Wall Mirro",
     price: "450$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "The wall mirror is a stylish and functional addition to any space, designed to enhance both aesthetics and practicality. With its sleek frame and high-quality reflective surface, this mirror not only provides a clear, distortion-free view but also adds a touch of elegance to your decor. Ideal for any room, from the entryway to the bathroom or living room, it helps to create a sense of space and light.",
     longDescription:
@@ -635,19 +652,19 @@ export const list = [
       "../images/list/bantr1.jpg", // Related image 1
       "../images/list/bantr3.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 26,
     name: "Ceramic Vase",
     price: "600$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "This exquisite ceramic vase adds a touch of elegance to any space with its timeless design and high-quality craftsmanship. Handcrafted from fine ceramic, it features a sleek, smooth finish and intricate detailing that highlights its artistic charm. Ideal for showcasing fresh flowers or decorative branches, the vase enhances both modern and traditional interiors. Its versatile design complements a variety of decor styles, making it a perfect centerpiece for living rooms, dining areas, or entryways.",
+      "This exquisite ceramic vase adds a touch of elegance to any space with its timeless design and high-quality craftsmanship. Handcrafted from fine ceramic, it features a sleek, smooth finish and intricate detailing that highlights its artistic charm. Ideal for showcasing fresh flowers or decorative branches, the vase enhances both modern and traditional Quận 3s. Its versatile design complements a variety of decor styles, making it a perfect centerpiece for living rooms, dining areas, or entryways.",
     longDescription:
-      "A ceramic vase is a quintessential decor piece that combines artistry with practicality, offering both aesthetic appeal and functional utility. Crafted with precision, these vases come in various shapes and sizes, from traditional urns to sleek modern designs, each contributing uniquely to a space’s ambiance. Handcrafted ceramic vases often feature intricate details and high-quality finishes, including glossy or matte glazes, adding sophistication to any interior. Their versatile design makes them suitable for diverse settings, whether showcasing fresh flowers, decorative branches, or serving as standalone accents. The high-quality ceramic material ensures durability and resistance to wear, while a variety of colors and patterns allow for seamless integration into different decor styles. Proper care, including gentle cleaning and protection from damage, maintains their pristine appearance over time. Ceramic vases enhance both modern and traditional interiors, making them valuable additions that brighten and elevate any room's atmosphere.",
+      "A ceramic vase is a quintessential decor piece that combines artistry with practicality, offering both aesthetic appeal and functional utility. Crafted with precision, these vases come in various shapes and sizes, from traditional urns to sleek modern designs, each contributing uniquely to a space’s ambiance. Handcrafted ceramic vases often feature intricate details and high-quality finishes, including glossy or matte glazes, adding sophistication to any Quận 3. Their versatile design makes them suitable for diverse settings, whether showcasing fresh flowers, decorative branches, or serving as standalone accents. The high-quality ceramic material ensures durability and resistance to wear, while a variety of utilities and patterns allow for seamless integration into different decor styles. Proper care, including gentle cleaning and protection from damage, maintains their pristine appearance over time. Ceramic vases enhance both modern and traditional Quận 3s, making them valuable additions that brighten and elevate any room's atmosphere.",
     reviews: 21, // Add a field for customer reviews
     sku: " BHG5542 BH251-12", // Add a field for SKU
     tags: ["Furniture", "Vase", "Modern"], // Add tags
@@ -662,19 +679,19 @@ export const list = [
       "../images/list/binhgom1.jpg", // Related image 1
       "../images/list/binhgom2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 27,
     name: "Glossy Ceramic Vase",
     price: "1.000$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "This exquisite ceramic vase adds a touch of elegance to any space with its timeless design and high-quality craftsmanship. Handcrafted from fine ceramic, it features a sleek, smooth finish and intricate detailing that highlights its artistic charm. Ideal for showcasing fresh flowers or decorative branches, the vase enhances both modern and traditional interiors. Its versatile design complements a variety of decor styles, making it a perfect centerpiece for living rooms, dining areas, or entryways.",
+      "This exquisite ceramic vase adds a touch of elegance to any space with its timeless design and high-quality craftsmanship. Handcrafted from fine ceramic, it features a sleek, smooth finish and intricate detailing that highlights its artistic charm. Ideal for showcasing fresh flowers or decorative branches, the vase enhances both modern and traditional Quận 3s. Its versatile design complements a variety of decor styles, making it a perfect centerpiece for living rooms, dining areas, or entryways.",
     longDescription:
-      "A ceramic vase is a quintessential decor piece that combines artistry with practicality, offering both aesthetic appeal and functional utility. Crafted with precision, these vases come in various shapes and sizes, from traditional urns to sleek modern designs, each contributing uniquely to a space’s ambiance. Handcrafted ceramic vases often feature intricate details and high-quality finishes, including glossy or matte glazes, adding sophistication to any interior. Their versatile design makes them suitable for diverse settings, whether showcasing fresh flowers, decorative branches, or serving as standalone accents. The high-quality ceramic material ensures durability and resistance to wear, while a variety of colors and patterns allow for seamless integration into different decor styles. Proper care, including gentle cleaning and protection from damage, maintains their pristine appearance over time. Ceramic vases enhance both modern and traditional interiors, making them valuable additions that brighten and elevate any room's atmosphere.",
+      "A ceramic vase is a quintessential decor piece that combines artistry with practicality, offering both aesthetic appeal and functional utility. Crafted with precision, these vases come in various shapes and sizes, from traditional urns to sleek modern designs, each contributing uniquely to a space’s ambiance. Handcrafted ceramic vases often feature intricate details and high-quality finishes, including glossy or matte glazes, adding sophistication to any Quận 3. Their versatile design makes them suitable for diverse settings, whether showcasing fresh flowers, decorative branches, or serving as standalone accents. The high-quality ceramic material ensures durability and resistance to wear, while a variety of utilities and patterns allow for seamless integration into different decor styles. Proper care, including gentle cleaning and protection from damage, maintains their pristine appearance over time. Ceramic vases enhance both modern and traditional Quận 3s, making them valuable additions that brighten and elevate any room's atmosphere.",
     reviews: 11, // Add a field for customer reviews
     sku: " BHG4442 BH251-111", // Add a field for SKU
     tags: ["Furniture", "Vase", "Modern"], // Add tags
@@ -689,7 +706,7 @@ export const list = [
       "../images/list/binhhoa2.jpg", // Related image 1
       "../images/list/binhhoa3.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 28,
@@ -697,11 +714,11 @@ export const list = [
     price: "10.000$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "A kitchen cabinet is an essential piece of furniture that maximizes storage and organizes kitchen essentials efficiently. Made from high-quality materials such as wood, laminate, or stainless steel, kitchen cabinets are designed to withstand the demands of daily use. With a variety of styles, colors, and finishes available, they can be customized to match any kitchen decor.",
+      "A kitchen cabinet is an essential piece of furniture that maximizes storage and organizes kitchen essentials efficiently. Made from high-quality materials such as wood, laminate, or stainless steel, kitchen cabinets are designed to withstand the demands of daily use. With a variety of styles, utilities, and finishes available, they can be customized to match any kitchen decor.",
     longDescription:
-      "A kitchen cabinet plays a crucial role in both the functionality and aesthetics of a kitchen. Beyond simply offering storage space, it helps create a well-organized environment where everything from pots and pans to spices and utensils can be neatly stored and easily accessed. Kitchen cabinets are available in a variety of materials, such as solid wood, plywood, MDF, and even metal, each offering unique benefits in terms of durability, style, and maintenance. Solid wood cabinets, for instance, are known for their classic appeal and long-lasting strength, while laminate or MDF options are more affordable and come in a wide range of colors and finishes.In modern kitchen design, kitchen cabinets often incorporate innovative features like soft-close hinges, pull-out trays, and vertical dividers to maximize storage efficiency and ease of use. Cabinets with glass doors or open shelving are also popular choices for displaying fine dishware or adding a decorative touch. Additionally, cabinetry can be custom-built to fit specific kitchen layouts and personal preferences, offering flexibility in terms of height, width, and depth. With the right choice of kitchen cabinets, homeowners can transform the look and feel of their kitchen, making it more inviting and practical.",
+      "A kitchen cabinet plays a crucial role in both the functionality and aesthetics of a kitchen. Beyond simply offering storage space, it helps create a well-organized environment where everything from pots and pans to spices and utensils can be neatly stored and easily accessed. Kitchen cabinets are available in a variety of materials, such as solid wood, plywood, MDF, and even metal, each offering unique benefits in terms of durability, style, and maintenance. Solid wood cabinets, for instance, are known for their classic appeal and long-lasting strength, while laminate or MDF options are more affordable and come in a wide range of utilities and finishes.In modern kitchen design, kitchen cabinets often incorporate innovative features like soft-close hinges, pull-out trays, and vertical dividers to maximize storage efficiency and ease of use. Cabinets with glass doors or open shelving are also popular choices for displaying fine dishware or adding a decorative touch. Additionally, cabinetry can be custom-built to fit specific kitchen layouts and personal preferences, offering flexibility in terms of height, width, and depth. With the right choice of kitchen cabinets, homeowners can transform the look and feel of their kitchen, making it more inviting and practical.",
     reviews: 21, // Add a field for customer reviews
     sku: " TLV4442 TL251-111", // Add a field for SKU
     tags: ["Furniture", "Kitchen Cabinets", "Modern"], // Add tags
@@ -716,7 +733,7 @@ export const list = [
       "../images/list/tuchen1.webp", // Related image 1
       "../images/list/tuchen2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 30,
@@ -724,7 +741,7 @@ export const list = [
     price: "9.000$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A kitchen cabinet offers essential storage, keeping cookware and utensils organized. Available in various materials and designs, it enhances both functionality and aesthetics in any kitchen space.",
     longDescription:
@@ -744,7 +761,7 @@ export const list = [
       "../images/list/tubep1.jpg", // Related image 1
       "../images/list/tubep2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 31,
@@ -752,7 +769,7 @@ export const list = [
     price: "10.500.000$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A kitchen countertop provides a functional and durable surface for food preparation, enhancing both the efficiency and style of the kitchen space.",
     longDescription:
@@ -772,7 +789,7 @@ export const list = [
       "../images/list/ban1.webp", // Related image 1
       "../images/list/ban2.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 32,
@@ -780,7 +797,7 @@ export const list = [
     price: "6.000$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A kitchen lavabo faucet is a crucial element for any kitchen, offering convenience and style. Available in various designs and finishes, it provides efficient water flow for cooking and cleaning. Made from durable materials like stainless steel, it ensures long-lasting performance while enhancing the kitchen's overall aesthetic.",
     longDescription:
@@ -800,7 +817,7 @@ export const list = [
       "../images/list/voinuoc1.jpg", // Related image 1
       "../images/list/voinuoc2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 33,
@@ -808,7 +825,7 @@ export const list = [
     price: "6.500$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A kitchen lavabo faucet is a crucial element for any kitchen, offering convenience and style. Available in various designs and finishes, it provides efficient water flow for cooking and cleaning. Made from durable materials like stainless steel, it ensures long-lasting performance while enhancing the kitchen's overall aesthetic.",
     longDescription:
@@ -828,7 +845,7 @@ export const list = [
       "../images/list/voint1.png", // Related image 1
       "../images/list/voint2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 34,
@@ -836,7 +853,7 @@ export const list = [
     price: "3.500$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A food cart in the kitchen offers versatile storage and serving solutions. Ideal for meal preparation and entertaining, it provides extra countertop space and compartments for utensils, ingredients, and appliances. Its mobility allows easy movement, making it perfect for both small and large kitchens. With various styles and finishes available, a food cart adds both functionality and a touch of style to your cooking space.",
     longDescription:
@@ -856,7 +873,7 @@ export const list = [
       "../images/list/xeday1.png", // Related image 1
       "../images/list/xeday2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 35,
@@ -864,7 +881,7 @@ export const list = [
     price: "3.500$",
     category: "Room Kitchen",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A food cart in the kitchen offers versatile storage and serving solutions. Ideal for meal preparation and entertaining, it provides extra countertop space and compartments for utensils, ingredients, and appliances. Its mobility allows easy movement, making it perfect for both small and large kitchens. With various styles and finishes available, a food cart adds both functionality and a touch of style to your cooking space.",
     longDescription:
@@ -884,15 +901,15 @@ export const list = [
       "../images/list/xed1.jpg", // Related image 1
       "../images/list/xed2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 36,
     name: "Dressing Table KY-GH309",
     price: "8.000$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bedroom vanity table is a stylish and functional addition to any bedroom. It provides a dedicated space for personal grooming and beauty routines, with features like drawers and mirrors for convenient storage and reflection. Available in various designs and finishes, it complements bedroom decor while enhancing daily rituals",
     longDescription:
@@ -912,16 +929,16 @@ export const list = [
       "../images/list/bantr1.jpg", // Related image 1
       "../images/list/bantr2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
 
   {
     id: 37,
     name: "Dressing table KY-VH201",
     price: "8.200$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bedroom vanity table is a stylish and functional addition to any bedroom. It provides a dedicated space for personal grooming and beauty routines, with features like drawers and mirrors for convenient storage and reflection. Available in various designs and finishes, it complements bedroom decor while enhancing daily rituals",
     longDescription:
@@ -941,7 +958,7 @@ export const list = [
       "../images/list/bantrang1.jpg", // Related image 1
       "../images/list/bantrang2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 38,
@@ -949,7 +966,7 @@ export const list = [
     price: "900$",
     category: "Bathroom",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bedroom vanity table is a stylish and functional addition to any bedroom. It provides a dedicated space for personal grooming and beauty routines, with features like drawers and mirrors for convenient storage and reflection. Available in various designs and finishes, it complements bedroom decor while enhancing daily rituals",
     longDescription:
@@ -969,7 +986,7 @@ export const list = [
       "../images/list/voint2.jpg", // Related image 1
       "../images/list/voint3.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 39,
@@ -977,7 +994,7 @@ export const list = [
     price: "850$",
     category: "Bathroom",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bedroom vanity table is a stylish and functional addition to any bedroom. It provides a dedicated space for personal grooming and beauty routines, with features like drawers and mirrors for convenient storage and reflection. Available in various designs and finishes, it complements bedroom decor while enhancing daily rituals",
     longDescription:
@@ -997,7 +1014,7 @@ export const list = [
       "../images/list/voinhatam1.png", // Related image 1
       "../images/list/voinhatam2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 40,
@@ -1005,7 +1022,7 @@ export const list = [
     price: "500$",
     category: "Bathroom",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bedroom vanity table is a stylish and functional addition to any bedroom. It provides a dedicated space for personal grooming and beauty routines, with features like drawers and mirrors for convenient storage and reflection. Available in various designs and finishes, it complements bedroom decor while enhancing daily rituals",
     longDescription:
@@ -1025,7 +1042,7 @@ export const list = [
       "../images/list/voisen1.jpg", // Related image 1
       "../images/list/vóien2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 41,
@@ -1033,7 +1050,7 @@ export const list = [
     price: "15.000$",
     category: "Bathroom",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bathtub is a luxurious addition to any bathroom, offering a relaxing and comfortable bathing experience. Available in various styles and materials, such as freestanding, alcove, or corner tubs, it enhances the bathroom's functionality and aesthetic appeal. With features like built-in jets or ergonomic designs, it provides both style and comfort for a rejuvenating soak.",
     longDescription:
@@ -1053,7 +1070,7 @@ export const list = [
       "../images/list/bonnt1.jpg", // Related image 1
       "../images/list/bonnt2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 42,
@@ -1061,7 +1078,7 @@ export const list = [
     price: "19.000$",
     category: "Bathroom",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bathtub is a luxurious addition to any bathroom, offering a relaxing and comfortable bathing experience. Available in various styles and materials, such as freestanding, alcove, or corner tubs, it enhances the bathroom's functionality and aesthetic appeal. With features like built-in jets or ergonomic designs, it provides both style and comfort for a rejuvenating soak.",
     longDescription:
@@ -1081,7 +1098,7 @@ export const list = [
       "../images/list/bontam1.jpg", // Related image 1
       "../images/list/bontam2.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
 
   {
@@ -1090,7 +1107,7 @@ export const list = [
     price: "5.900$",
     category: "Bathroom",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A bathroom sink is a practical fixture designed for daily use. Available in various styles and materials, it provides a functional space for washing hands, brushing teeth, and other personal hygiene tasks. Its design enhances the bathroom's aesthetics while ensuring durability and ease of maintenance.",
     longDescription:
@@ -1110,15 +1127,15 @@ export const list = [
       "../images/list/bonnt1.jpg", // Related image 1
       "../images/list/bontam1.jpg", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
   {
     id: 44,
     name: "Cigar Cabinet",
     price: "9.900$",
-    category: "Interior Design",
+    category: "Quận 3",
     material: "Leather",
-    colors: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
       "A cigar cabinet is a sophisticated storage solution for cigar enthusiasts. It maintains optimal humidity and temperature, preserving the quality and flavor of cigars. With elegant designs and durable materials, it not only ensures ideal conditions for cigars but also adds a touch of luxury and organization to any space.",
     longDescription:
@@ -1138,6 +1155,6 @@ export const list = [
       "../images/list/tubep1.jpg", // Related image 1
       "../images/list/tu1.webp", // Related image 2
     ],
-    detail: "See More",
+    detail: "Xem Thêm",
   },
 ];

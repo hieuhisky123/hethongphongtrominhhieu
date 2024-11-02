@@ -35,12 +35,12 @@ const Interior = () => {
     }
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Interior"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Tân Bình"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Interior"
-    const matchesCategory = product.category === "Interior";
+    // Chỉ hiển thị sản phẩm có category là "Tân Bình"
+    const matchesCategory = product.category === "Tân Bình";
 
     // Lọc theo khoảng giá
     const matchesPrice =
@@ -73,7 +73,7 @@ const Interior = () => {
     <>
       <section className="blog-out mb">
         <Back
-          title="INTERIOR"
+          title="Interior"
           cover={img}
           icon1={icon1}
           icon2={icon2}

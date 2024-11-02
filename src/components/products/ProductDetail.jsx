@@ -4,8 +4,8 @@ import { list } from "../data/Data";
 import "./ProductDetail.css";
 import styled from "styled-components";
 import facebook from "../images/facebook.png";
-import twitter from "../images/twitter.png";
-import instagram from "../images/instagram.png";
+import zalo from "../images/zalo.png";
+import phone from "../images/phone.png";
 import Reviews from "../reviews";
 import { Crecontext } from "../providertocar";
 
@@ -75,37 +75,54 @@ const ProductDetail = () => {
           <div className="product-main">
             <div className="product-info">
               <h1>{product.name}</h1>
-              <p className="price">Price: {product.price}</p>
+              <p className="price">Giá phòng: {product.price}</p>
 
               <div className="ratings">
                 <span>⭐⭐⭐⭐⭐</span>
-                <span>{product.reviews} Customer Reviews</span>
+                <span>{product.reviews} Người đánh giá</span>
               </div>
 
               <p className="description-short">{product.shortDescription}</p>
 
               <div className="product-details">
-                <p>Id: {product.sku}</p>
-                <p>Category: {product.category}</p>
-                <p>Tags: {product.tags.join(", ")}</p>
+                <p>Tiện Ích: {product.utilities.join(", ")}</p>
+                <p>Phòng: {product.sku}</p>
+                <p>Khu Vực: {product.category}</p>
+                <p>Nội Thất: {product.tags.join(", ")}</p>
               </div>
 
               <div className="social-share">
-                <span>Share:</span>
+                <h1>Liên Hệ:</h1>
+              </div>
+              <div className="social-share">
                 <Icon>
-                  <img src={facebook} alt="Facebook" />
+                  <a href="tel:0817590805">
+                    <img src={phone} alt="phone" />
+                  </a>
                 </Icon>
                 <Icon>
-                  <img src={twitter} alt="Twitter" />
+                  <a
+                    href="https://zalo.me/0817590805"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={zalo} alt="zalo" />
+                  </a>
                 </Icon>
                 <Icon>
-                  <img src={instagram} alt="Instagram" />
+                  <a
+                    href="https://m.me/profile.php?id=100049668137817&mibextid=LQQJ4d"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={facebook} alt="facebook" />
+                  </a>
                 </Icon>
               </div>
               <div>
-                <WishlistButton onClick={() => handleAddToCart(product)}>
+                {/* <WishlistButton onClick={() => handleAddToCart(product)}>
                   Add to wishlist
-                </WishlistButton>
+                </WishlistButton> */}
               </div>
             </div>
           </div>
