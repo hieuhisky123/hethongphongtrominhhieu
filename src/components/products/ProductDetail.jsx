@@ -111,7 +111,7 @@ const ProductDetail = () => {
                 </Icon>
                 <Icon>
                   <a
-                    href="https://m.me/profile.php?id=100049668137817&mibextid=LQQJ4d"
+                    href="https://m.me/profile.php?id=100049668137817"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
