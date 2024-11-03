@@ -22,7 +22,7 @@ const Product = ({ onUpdateWishlistCount }) => {
   const [nameFilter, setNameFilter] = useState(""); // Chuỗi tìm kiếm sản phẩm theo tên
   const [showDropdown, setShowDropdown] = useState(false); // Hiển thị dropdown cho danh mục
   const [minPrice, setMinPrice] = useState(0); // Giá trị tối thiểu
-  const [maxPrice, setMaxPrice] = useState(5000000); // Giá trị tối đa
+  const [maxPrice, setMaxPrice] = useState(10000000); // Giá trị tối đa
   const [sortBy, setSortBy] = useState("Sắp Xếp"); // Tiêu chí sắp xếp
   const [showSortDropdown, setShowSortDropdown] = useState(false); // Hiển thị dropdown sắp xếp
 

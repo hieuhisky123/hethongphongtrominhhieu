@@ -25,7 +25,7 @@ export const nav = [
 export const list = [
   {
     id: 1,
-    name: "103TT Cộng Hòa, P4, TP.HCM",
+    name: "103TT Cộng Hòa, Phường 4, Tân Bình, TP.HCM",
     price: "3,900,000 vnđ",
     category: "Tân Bình",
     material: "Leather",
@@ -54,7 +54,7 @@ export const list = [
   },
   {
     id: 2,
-    name: "206TT Cộng Hòa, P4, TP.HCM",
+    name: "206TT Cộng Hòa, Phường 4, Tân Bình, TP.HCM",
     price: "4.500.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
@@ -83,7 +83,7 @@ export const list = [
   },
   {
     id: 3,
-    name: "vip203TT Cộng Hòa, P4, TP.HCM",
+    name: "vip203TT Cộng Hòa, Phường 4, Tân Bình, TP.HCM",
     price: "7.500.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
@@ -120,483 +120,548 @@ export const list = [
   },
   {
     id: 4,
-    name: "Leather Recliner Sofa",
-    price: "14.800$",
+    name: "401TT Bạch Đằng, Phường 2, Tân Bình, TP.HCM",
+    price: "5.000.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: [
+      "Tối đa 4 người - 2 xe",
+      "Thang máy",
+      "Máy giặt chung",
+      "Cửa vân tay",
+    ], // Update to color codes
     shortDescription:
-      "Luxury Japanese-Style Sofa: This single-seat sofa features an upright backrest and a high, comfortable headrest. The middle seat can be folded into a convenient coffee table, and the electric footrest provides easy adjustment for maximum relaxation.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Top Grain Leather – Available in either Half Leather (contact leather) or Full Leather (full leather), this premium cowhide is imported from Italy and tanned using natural Eco-friendly leather processing technology that strictly adheres to environmental protection regulations set by the European Union Leather Industry Convention. The leather surface is coated with a UV-resistant resin to protect it from direct light exposure, reduce color fading, and enhance the leather's durability over time. The frame is constructed from solid eucalyptus wood, which is immune to termites and resistant to warping. The cushion is made from high-density foam combined with diverse polyurethane, laser-cut for precision according to the original design. This ensures comfort, softness, load-bearing capability, and shape retention. With a moderate size, it can be flexibly arranged and positioned in various settings.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 3, // Add a field for customer reviews
-    sku: "PMA3123 KD11251-152", // Add a field for SKU
-    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    sku: "401", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp", "Ban công"], // Add tags
     images: [
-      "../images/list/gheDD1.webp", // Main image
-      "../images/list/gheDD2.webp", // Thumbnail image
-      "../images/list/gheDD3.webp", // Thumbnail image
+      "../images/list/401.1.jpg", // Main image
+      "../images/list/401.2.jpg", // Thumbnail image
+      "../images/list/401.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/gheDD1.webp",
+    cover: "../images/list/401.6.jpg",
     relatedImages: [
-      "../images/list/gheTG2.webp", // Related image 1
-      "../images/list/gheTG1.webp", // Related image 2
+      "../images/list/401.4.jpg", // Related image 1
+      "../images/list/401.5.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 5,
-    name: "Mayo Recliner Chair",
-    price: "2.700$",
+    name: "203TT Bạch Đằng, Phường 2, Tân Bình, TP.HCM",
+    price: "4.000.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: [
+      "Tối đa 4 người - 2 xe",
+      "Thang máy",
+      "Máy giặt chung",
+      "Cửa vân tay",
+    ], // Update to color codes
     shortDescription:
-      "Mayo Swivel Chair: The Mayo Swivel Chair features a sleek, modern design with 360-degree rotation for flexible movement. The sofa is imported from a German company that operates a factory in China, following the entire production process according to German standards.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "100% Full Leather Top Grain – The New Club leather from Germany is tanned using Eco-friendly technology, making it particularly suitable for families with young children due to its environmental and user-friendly properties. The leather surface is coated with a UV-resistant resin to protect it from direct light exposure, reduce color fading, and enhance durability over time. The leather surface is coated with a UV-resistant resin to protect it from direct light exposure, reduce color fading, and enhance durability over time. The frame is made of solid golden birch wood, immune to termites and resistant to warping, with a durability of up to 25 years. The cushion is made from high-density foam combined with various types of D42 and D40 foams, laser-cut for precision according to the original design. This ensures comfort, softness, load-bearing capability, and shape retention.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 8, // Add a field for customer reviews
-    sku: "PMA54651 GH2316-22", // Add a field for SKU
-    tags: ["Furniture", "Chair", "Modern"], // Add tags
+    sku: "203", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/gheTG1.webp", // Main image
-      "../images/list/gheTG2.webp", // Thumbnail image
-      "../images/list/gheTG3.webp", // Thumbnail image
+      "../images/list/203.1.jpg", // Main image
+      "../images/list/203.2.jpg", // Thumbnail image
+      "../images/list/203.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/gheTG1.webp",
+    cover: "../images/list/203.4.jpg",
     relatedImages: [
-      "../images/list/gheDD1.webp", // Related image 1
-      "../images/list/gheDD2.webp", // Related image 2
+      "../images/list/203.5.jpg", // Related image 1
+      "../images/list/203.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 6,
-    name: "Horten Coffee Table",
-    price: "4.800$",
+    name: "505TT Bạch Đằng, Phường 2, Tân Bình, TP.HCM",
+    price: "4.200.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: [
+      "Tối đa 4 người - 2 xe",
+      "Thang máy",
+      "Máy giặt chung",
+      "Cửa vân tay",
+    ], // Update to color codes
     shortDescription:
-      "The Horten Natural Marble Coffee Table features a minimalist design and is available in two utilities: white and black. With its moderate size, it is well-suited for medium to large living room spaces.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "The coffee table is crafted from solid natural marble, available in white or black. It is coated with a moisture-resistant layer and a glossy lacquer finish to ensure durability and longevity. The table legs are made from the same natural marble material. Exclusive design, imported from a Hong Kong company with a manufacturing plant in China.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 6, // Add a field for customer reviews
-    sku: " NTA4561 KD1092-12", // Add a field for SKU
-    tags: ["Furniture", "table", "Modern"], // Add tags
+    sku: "505", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/ban1.webp", // Main image
-      "../images/list/ban2.webp", // Thumbnail image
-      "../images/list/ban3.webp", // Thumbnail image
+      "../images/list/505.1.jpg", // Main image
+      "../images/list/505.2.jpg", // Thumbnail image
+      "../images/list/505.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/ban1.webp",
+    cover: "../images/list/505.4.jpg",
     relatedImages: [
-      "../images/list/bantr1.jpg", // Related image 1
-      "../images/list/bantr3.jpg", // Related image 2
+      "../images/list/505.5.jpg", // Related image 1
+      "../images/list/505.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 7,
-    name: "Square Bed",
-    price: "24.800$",
+    name: "403TT Nguyễn Chánh Sắt, Tân Bình, TP.HCM",
+    price: "3.800.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Thang bộ", "Máy giặt chung"], // Update to color codes
     shortDescription:
-      "The Square Bed features a high, gently rounded headboard upholstered in soft, cool, and comfortable genuine leather. This design element adds both elegance and comfort to your bedroom, making it a standout piece in any modern decor.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Design: High, gently rounded headboard with soft, genuine leather upholstery. Materials: Premium quality leather for a luxurious feel and durability. Features: Provides both style and comfort, enhancing the overall aesthetic of your bedroom. The Square Bed features a high, gently rounded headboard upholstered in soft, genuine leather or smart, water-resistant, antibacterial fabric. This versatile design enhances both comfort and durability.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 10, // Add a field for customer reviews
-    sku: " GNU4561 KD1092-12", // Add a field for SKU
-    tags: ["Furniture", "bed", "Modern"], // Add tags
+    sku: "403", // Add a field for SKU
+    tags: ["Gác", "Kệ bếp", "Máy lạnh"], // Add tags
     images: [
-      "../images/list/giuong1.webp", // Main image
-      "../images/list/giuong2.webp", // Thumbnail image
-      "../images/list/giuong3.webp", // Thumbnail image
+      "../images/list/403ncs.1.jpg", // Main image
+      "../images/list/403ncs.4.jpg", // Thumbnail image
+      "../images/list/403ncs.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/giuong1.webp",
+    cover: "../images/list/403ncs.2.jpg",
     relatedImages: [
-      "../images/list/giuongM1.webp", // Related image 1
-      "../images/list/giuongM2.webp", // Related image 2
+      "../images/list/403ncs.5.jpg", // Related image 1
+      "../images/list/403ncs.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 8,
-    name: "Mikado Bed",
-    price: "25.800$",
+    name: "G03TT D52, Phường 12, Tân Bình, TP.HCM",
+    price: "3.600.000",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Tối đa 4 người - 1 xe", "Máy giặt chung", "Thang bộ"], // Update to color codes
     shortDescription:
-      "The Mikado Bed features a high, minimalist headboard designed with sturdy, block-like shapes. Despite its robust and architectural appearance, the bed remains soft and comfortable to the touch.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "The Mikado Bed features a high, minimalist headboard with a robust, block-like design that remains soft to the touch. Materials: Choose from genuine leather or smart, water-resistant, antibacterial fabric. The fabric options come in 11 antibacterial utilities, while the leather is available in 69 utilities and 4 different materials. Functionality: Designed with a concealed bed frame, the Mikado Bed includes a motorized lift mechanism that allows you to raise and lower the bed with a push-button, providing easy access to storage space beneath the bed. Additional Features: Comes with a long ottoman measuring 150x50x44 cm, featuring internal storage to optimize your bedroom space. Size: Ideal for medium to large bedrooms, offering a blend of style, comfort, and practicality.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 13, // Add a field for customer reviews
-    sku: " GNU52551 KD2553-224", // Add a field for SKU
-    tags: ["Furniture", "bed", "Modern"], // Add tags
+    sku: "G03", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Tủ đồ", "Kệ bếp", "Máy nước nóng"], // Add tags
     images: [
-      "../images/list/giuongM1.webp", // Main image
-      "../images/list/giuongM2.webp", // Thumbnail image
-      "../images/list/giuongM3.webp", // Thumbnail image
+      "../images/list/G03.1.jpg", // Main image
+      "../images/list/G03.2.jpg", // Thumbnail image
+      "../images/list/G03.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/giuongM1.webp",
+    cover: "../images/list/G03.4.jpg",
     relatedImages: [
-      "../images/list/giuong1.webp", // Related image 1
-      "../images/list/giuong2.webp", // Related image 2
+      "../images/list/G03.5.jpg", // Related image 1
+      "../images/list/G03.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
 
   {
     id: 10,
-    name: "Historian Display Cabinet",
-    price: "12.800$",
+    name: "103TT D52, Phường 12, Tân Bình, TP.HCM",
+    price: "3.500.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Tối đa 4 người - 1 xe", "Máy giặt chung", "Thang bộ"], // Update to color codes
     shortDescription:
-      "For those who appreciate classic, luxurious designs, the Historian Display Cabinet is the perfect choice that meets both aesthetic and functional needs.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "The Historian Display Cabinet combines classic elegance with practical functionality, making it an ideal addition to any bedroom. Top Surface: Features a wide top panel covered in premium black tempered glass, known for its strength and durability, allowing you to place lightweight items without affecting the exterior material. Body: Constructed from wood and upholstered in soft Eco Leather, ensuring a luxurious feel. The cabinet includes two large compartments for optimal storage, making it practical for organizing your space. Legs: The cabinet stands on high-quality, rust-resistant metal legs, providing durability and stability. Customization: Available in a range of utilities, allowing you to coordinate the Historian Display Cabinet with the Historia Bed for a unified look. Size: Designed with a moderate size to fit seamlessly into any bedroom, enhancing both functionality and style. Combining the Historian Display Cabinet with the Historia Bed will elevate the sophistication of your bedroom space.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 4, // Add a field for customer reviews
-    sku: " TUG2534 HF2512-35", // Add a field for SKU
-    tags: ["Furniture", "Cabinet", "Modern"], // Add tags
+    sku: "103", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp", "Tủ đồ"], // Add tags
     images: [
-      "../images/list/tu1.webp", // Main image
-      "../images/list/tu2.webp", // Thumbnail image
-      "../images/list/tu3.webp", // Thumbnail image
+      "../images/list/103D52.1.jpg", // Main image
+      "../images/list/103D52.2.jpg", // Thumbnail image
+      "../images/list/103D52.3.jpg", // Thumbnail image
     ],
-    cover: "../images/list/tu1.webp",
+    cover: "../images/list/103D52.4.jpg",
     relatedImages: [
-      "../images/list/tuH1.jpg", // Related image 1
-      "../images/list/tuH2.jpg", // Related image 2
+      "../images/list/103D52.5.jpg", // Related image 1
+      "../images/list/103D52.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 11,
-    name: "Cassie Decorative Cabinet",
-    price: "9.800$",
+    name: "202TT D52, Phường 12, Tân Bình, TP.HCM",
+    price: "3.600.000 vnđ",
     category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Tối đa 4 người - 1 xe", "Máy giặt chung", "Thang bộ"], // Update to color codes
     shortDescription:
-      "The Cassie Nightstand is designed in a minimalist style that highlights the luxurious Eco Leather material, creating a high-end furniture piece that stands out in any bedroom.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "The Cassie Nightstand is a testament to minimalist elegance, crafted to showcase the beauty of premium Eco Leather. Construction: The top, body, and exterior compartments are made from wood and upholstered in soft Eco Leather. This design allows you to place lightweight items on the surface without affecting the quality of the upholstery. Customization: Available in a variety of utilities, enabling you to coordinate the Cassie Nightstand with the Casa Bed for a cohesive look. Legs: Features metal legs finished in a sleek black, complementing the minimalist design. Size: Designed with a moderate size to fit seamlessly into any bedroom space. Style: Combining the Cassie Nightstand with the Casa Bed will elevate the sophistication of your bedroom, adding a touch of luxury and refinement",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 3, // Add a field for customer reviews
-    sku: " TUG2231 HF24512-55", // Add a field for SKU
-    tags: ["Furniture", "Cabinet", "Modern"], // Add tags
+    sku: "202", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp", "Tủ đồ"], // Add tags
     images: [
-      "../images/list/tuH1.jpg", // Main image
-      "../images/list/tuH2.jpg", // Thumbnail imag
+      "../images/list/202.1.jpg", // Main image
+      "../images/list/202.2.jpg",
+      "../images/list/202.5.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/tuH1.jpg",
+    cover: "../images/list/202.3.jpg",
     relatedImages: [
-      "../images/list/tu1.png", // Related image 1
-      "../images/list/tu2.png", // Related image 2
+      "../images/list/202.4.jpg", // Related image 1
+      "../images/list/202.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 12,
-    name: "Decorative Lights",
-    price: "1.000$",
-    category: "Gò Vấp",
+    name: "201TT Nguyễn Quang Bích, Phường 13, Tân Bình, TP.HCM",
+    price: "3.700.000",
+    category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: [
+      "Tối đa 4 người - 2 xe",
+      "Máy giặt chung",
+      "Thang bộ",
+      "Cửa vân tay",
+    ], // Update to color codes
     shortDescription:
-      "For smaller spaces such as living rooms, dining areas, or rooms with low ceilings, ceiling lights are an ideal choice. Especially with the Modern Pendant Light that we are introducing, you’re sure to be impressed.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Modern Pendant Lamp is designed with the image of crystal flowers floating through a circle, with the highlight being the crystal flowers that are delicately cut by artisans as if brought to life under LED light, becoming magically sparkling in your Tân Bình space. The crystal chandelier is a combination of the material between the shaped stainless steel frame and crystal beads. With the combination of high-quality materials, the lamp is a great ceiling decoration product for customers, helping to bring a sense of elegance and nobility. This is a type of lamp that is favored by many consumers because it has high durability and can be designed according to requirements to adapt to many spaces with different areas.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 6, // Add a field for customer reviews
-    sku: " TUG2231 HF24512-55", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+    sku: "201", // Add a field for SKU
+    tags: ["Gác", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/dentha1.jpg", // Main image
-      "../images/list/dentha2.jpg",
-      "../images/list/dentha3.jpg", // Thumbnail imag
+      "../images/list/201.1.jpg", // Main image
+      "../images/list/201.2.jpg",
+      "../images/list/201.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/dentha1.jpg",
+    cover: "../images/list/201.4.jpg",
     relatedImages: [
-      "../images/list/dennt1.jpg", // Related image 1
-      "../images/list/denpl1.jpg", // Related image 2
+      "../images/list/201.5.jpg", // Related image 1
+      "../images/list/201.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
 
   {
     id: 13,
-    name: "Crystal Lamp",
-    price: "800$",
-    category: "Gò Vấp",
+    name: "205TT Thân Nhân Trung, Phường 13, Tân Bình, TP.HCM",
+    price: "3.700.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Tối đa 4 người - 2 xe", "Máy giặt chung", "Thang máy"], // Update to color codes
     shortDescription:
-      "As society continues to evolve, decorative elements like crystal chandeliers are increasingly valued. These chandeliers are not just functional lighting fixtures but also reflect the personality and aesthetic taste of the homeowner.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Not only is it a lighting product, but it is also a symbol of harmony between design art and utility. With a new idea, inspired by the concentric circles hanging and intertwining, this lamp model brings a different modernity, instead of the previous complicated designs. The electrostatically plated alloy frame combined with delicately cut K9 crystal makes the lamp model luxurious and attractive. When the light passes through the crystal beam, the refraction effect creates an extremely splendid and luxurious attraction. The product uses integrated LED technology, providing realistic and clear light, helping to save energy most effectively. The lamp still ensures a good light source, creating a comfortable and balanced feeling for the space. In particular, the lamp does not contain UV rays and is environmentally friendly.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 10, // Add a field for customer reviews
-    sku: " TUG2231 HF24512-55", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+    sku: "205", // Add a field for SKU
+    tags: ["Gác", "Kệ bếp", "Máy lạnh"], // Add tags
     images: [
-      "../images/list/denpl1.jpg", // Main image
-      "../images/list/denpl2.jpg",
-      "../images/list/denpl3.jpg", // Thumbnail imag
+      "../images/list/205.1.jpg", // Main image
+      "../images/list/205.2.jpg",
+      "../images/list/205.4.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/denpl1.jpg",
+    cover: "../images/list/205.3.jpg",
     relatedImages: [
-      "../images/list/dentha1.jpg", // Related image 1
-      "../images/list/dennt1.jpg", // Related image 2
+      "../images/list/205.5.jpg", // Related image 1
+      "../images/list/205.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 14,
-    name: "Wall Lamp",
-    price: "1.000$",
-    category: "Gò Vấp",
+    name: "201TT Thân Nhân Trung, Phường 13, Tân Bình, TP.HCM",
+    price: "5.500.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Máy giặt chung", "Thang máy"], // Update to color codes
     shortDescription:
-      "Modern Wall Lamp is the ideal choice for those who are looking for a unique and convenient highlight for their living space. With its beautiful design and flexible features, it will bring your space a modern and warm beauty.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Modern Wall Lamp is made of electrostatically plated alloy, ensuring high durability and stability during use. The simple but sophisticated design will enhance the beauty of the space where it is placed. With warm yellow light, creating a warm and comfortable space for living rooms, bedrooms, restaurants or hotels. You can also change the bulb to create different colored light depending on the mood and space used. The screw base bulb is not only energy-saving but also has a long life, helping you save costs in replacement. Suitable for many different spaces such as living rooms, bedrooms, restaurants, hotels and many other places.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 9, // Add a field for customer reviews
-    sku: " DEN1551 DE12512-5", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+    sku: "201", // Add a field for SKU
+    tags: [
+      "1 Phòng ngủ",
+      "Kệ bếp",
+      "Máy lạnh",
+      "Quạt",
+      "Tủ lạnh",
+      "Giường,nệm",
+      "Tủ đồ",
+    ], // Add tags
     images: [
-      "../images/list/dentuong1.jpg", // Main image
-      "../images/list/dentuong2.jpg",
-      "../images/list/dentuong3.jpg", // Thumbnail imag
+      "../images/list/201TNT.1.jpg", // Main image
+      "../images/list/201TNT.2.jpg",
+      "../images/list/201TNT.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/dentuong1.jpg",
+    cover: "../images/list/201TNT.4.jpg",
     relatedImages: [
-      "../images/list/dennt1.jpg", // Related image 1
-      "../images/list/denpl2.jpg", // Related image 2
+      "../images/list/201TNT.5.jpg", // Related image 1
+      "../images/list/201TNT.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 15,
-    name: "Table1 Lamp",
-    price: "500$",
-    category: "Gò Vấp",
+    name: "305TT Thân Nhân Trung, Phường 13, Tân Bình, TP.HCM",
+    price: "3.400.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Máy giặt chung", "Thang máy"], // Update to color codes
     shortDescription:
-      "Decorative table lamps are a very popular table lamp model today, can be used for bedrooms, living rooms, and desks. Modern, sophisticated design turns the lamp into a highlight for the room.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Decorative table lamp inspired by minimalism and sophistication. Decorative table lamp is crafted with the inspiration of minimalism, modernity and sophistication. In which, the lamp body is made of alloy combined with high-quality glass with pure, gentle and impressive beauty. The lampshade is painted in luxurious milky beige combined with eye-catching printed motifs. Thus, the decorative table lamp not only brings light to the space. When placed in any space, with the simple but sophisticated beauty of the lamp, it will increase the aesthetic value of the overall space of the room.",
-    reviews: 2, // Add a field for customer reviews
-    sku: " DEN3235 DE0234-52", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 9, // Add a field for customer reviews
+    sku: "305", // Add a field for SKU
+    tags: ["Gác", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/denban1.jpg", // Main image
-      "../images/list/denban2.jpg",
-      "../images/list/denban3.jpg", // Thumbnail imag
+      "../images/list/305.1.jpg", // Main image
+      "../images/list/305.2.jpg",
+      "../images/list/305.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/denban1.jpg",
+    cover: "../images/list/305.4.jpg",
     relatedImages: [
-      "../images/list/denb1.jpeg", // Related image 1
-      "../images/list/denb2.jpg", // Related image 2
+      "../images/list/305.5.jpg", // Related image 1
+      "../images/list/305.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 16,
-    name: "Table 2 Lamp",
-    price: "500$",
-    category: "Gò Vấp",
+    name: "307TT Thân Nhân Trung, Phường 13, Tân Bình, TP.HCM",
+    price: "3.400.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Máy giặt chung", "Thang máy"], // Update to color codes
     shortDescription:
-      "Decorative table lamps are used in offices, study rooms, decoration rooms, etc., contributing to bringing a more luxurious and classy beauty to the space, safe for the user's eyes.",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Decorative table lamp inspired by minimalism and sophistication. Decorative table lamp is crafted with the inspiration of minimalism, modernity and sophistication. In which, the lamp body is made of alloy combined with high-quality glass with pure, gentle and impressive beauty. The lampshade is painted in luxurious milky beige combined with eye-catching printed motifs. Thus, the decorative table lamp not only brings light to the space. When placed in any space, with the simple but sophisticated beauty of the lamp, it will increase the aesthetic value of the overall space of the room.",
-    reviews: 2, // Add a field for customer reviews
-    sku: " DEN55621 DE0234-522", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 9, // Add a field for customer reviews
+    sku: "307", // Add a field for SKU
+    tags: ["Gác", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/denb1.jpeg", // Main image
-      "../images/list/denb2.jpg",
-      "../images/list/denb3.jpg", // Thumbnail imag
+      "../images/list/305.6.jpg", // Main image
+      "../images/list/305.5.jpg",
+      "../images/list/305.4.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/denb2.jpg",
+    cover: "../images/list/305.3.jpg",
     relatedImages: [
-      "../images/list/denban1.jpg", // Related image 1
-      "../images/list/denban2.jpg", // Related image 2
+      "../images/list/305.2.jpg", // Related image 1
+      "../images/list/305.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 17,
-    name: "Outdoor lights 1 ",
-    price: "1.200$",
+    name: "02-03-04-05MC Lê Đức Thọ, Phường 13, Gò Vấp, TP.HCM",
+    price: "4.000.000 vnđ",
     category: "Gò Vấp",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Máy giặt chung", "Thang máy", "Cổng vân tay"], // Update to color codes
     shortDescription:
-      "With a neoclassical style and many sophisticated design lines, wall lamps bring to your space a luxurious, noble and classy beauty. Let's learn more about wall lamps in the article below!",
+      "Nằm trong khu vực Gò Vấp, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Meticulous and sophisticated design. Designed with European-style patterned details, combined with bronze color, the lamp is even more nostalgic and luxurious. Moreover, the pattern is delicately carved on the surface of the lamp, creating sophistication and uniqueness, looking like a perfect work of art. Safe material for users. Using durable electrostatic powder-coated alloy material helps prevent electricity from leaking out, safe for the environment and the health of users. The natural-colored stone lampshade helps the lamp reduce elaborate details, bringing harmony, creating a natural and close look.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 12, // Add a field for customer reviews
-    sku: " DEN15254 DE034-112", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+    sku: "102,103,104,105", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Nệm", "Quạt", "Tủ bếp"], // Add tags
     images: [
-      "../images/list/dennt1.jpg", // Main image
-      "../images/list/dennt2.jpg",
-      "../images/list/dennt3.jpg", // Thumbnail imag
+      "../images/list/1340.1.jpg", // Main image
+      "../images/list/1340.2.jpg",
+      "../images/list/1340.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/dennt1.jpg",
+    cover: "../images/list/1340.4.jpg",
     relatedImages: [
-      "../images/list/dentnt1.jpg", // Related image 1
-      "../images/list/dentnt2.jpg", // Related image 2
+      "../images/list/1340.5.jpg", // Related image 1
+      "../images/list/1340.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 18,
-    name: "Outdoor lights 2 ",
-    price: "8.000$",
+    name: "8MC Dương Quảng Hàm, Phường 6, Gò Vấp, TP.HCM",
+    price: "3.800.000 vnđ",
     category: "Gò Vấp",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Miễn phí giặt xấy"], // Update to color codes
     shortDescription:
-      "Have you ever been immersed in the magical beauty of ancient European streets, where the bright yellow lanterns illuminate the mossy stone walls? Or have you ever been fascinated by the magnificent castles with elaborate, splendid wall lamps? If so, try bringing that classic and luxurious beauty into your home with classic style wall lamps.",
+      "Nằm trong khu vực Gò Vấp, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Is a decorative lighting product that brings an impression to the installed space. With a classic style design, detailed and elaborate patterns on the entire lamp frame, lamp arm and lamp post, and high-quality copper alloy material, it is not only durable but also highlights luxury and elegance. The current types of wall lamps all use extremely gentle and harmonious light sources, so they consume limited electricity and the wall lamp is no exception. Using LED lights with gentle yellow light, you can both save costs and still achieve optimal aesthetic effect. For outdoor spaces such as outdoor areas and gardens, you install the lights high up. Because they will create a wide lighting angle to make it easier to disperse light to a large area.",
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
     reviews: 14, // Add a field for customer reviews
-    sku: " DEN1124 DE034-422", // Add a field for SKU
-    tags: ["Furniture", "Light", "Modern"], // Add tags
+    sku: "8", // Add a field for SKU
+    tags: ["Gác", "Kệ bếp"], // Add tags
     images: [
-      "../images/list/dentnt1.jpg", // Main image
-      "../images/list/dentnt2.jpg",
-      "../images/list/dentnt3.jpg", // Thumbnail imag
+      "../images/list/8.1.jpg", // Main image
+      "../images/list/8.2.jpg",
+      "../images/list/8.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/dentnt1.jpg",
+    cover: "../images/list/8.4.jpg",
     relatedImages: [
-      "../images/list/dennt1.jpg", // Related image 1
-      "../images/list/dennt2.jpg", // Related image 2
+      "../images/list/8.5.jpg", // Related image 1
+      "../images/list/8.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 19,
-    name: "Carpet 1 ",
-    price: "550$",
-    category: "Quận 3",
+    name: "30MC Dương Quảng Hàm, Phường 6, Gò Vấp, TP.HCM",
+    price: "4.100.000 vnđ",
+    category: "Gò Vấp",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Miễn phí giặt xấy"], // Update to color codes
     shortDescription:
-      "Country of origin: Türkiye. Trusted by many people because the carpet material is very good, the way the carpet is woven directly to the base creates durability and firmness for the product.",
+      "Nằm trong khu vực Gò Vấp, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "This Turkish carpet product will make your living room and bedroom space become luxurious, classy and cozy, more harmonious than ever. Suitable for all designs with many different Quận 3 items, creating an impressive and harmonious style for the living room or bedroom space. Material: Synthetic Fiber (Polypropylene + Polyester). European point weaving technology. The product meets German Oeko-Tex 100 quality standards. Long-term use and easy to clean or clean normally. The carpet is used to decorate a variety of living rooms or bedrooms with impressive and very beautiful and luxurious color patterns. The carpet's fur is woven to create firmness and the base has good grip on the floor, so it does not move during use. The carpet is carefully selected from raw materials to the production stage, so it is very safe for users as well as ensuring strict standards from the manufacturer at the Turkish carpet factory.",
-    reviews: 4, // Add a field for customer reviews
-    sku: " THA1124 TH034-422", // Add a field for SKU
-    tags: ["Furniture", "Carpet", "Modern"], // Add tags
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 14, // Add a field for customer reviews
+    sku: "30", // Add a field for SKU
+    tags: ["Gác lớn", "Quạt", "Bàn"], // Add tags
     images: [
-      "../images/list/tham1.jpg", // Main image
-      "../images/list/tham2.jpg",
-      "../images/list/tham3.jpg", // Thumbnail imag
+      "../images/list/30.1.jpg", // Main image
+      "../images/list/30.2.jpg",
+      "../images/list/30.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/tham1.jpg",
+    cover: "../images/list/30.4.jpg",
     relatedImages: [
-      "../images/list/thamts1.jpg", // Related image 1
-      "../images/list/thamts3.jpg", // Related image 2
+      "../images/list/30.5.jpg", // Related image 1
+      "../images/list/30.7.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
 
   {
     id: 21,
-    name: "Carpet 2 ",
-    price: "600$",
-    category: "Quận 3",
+    name: "14MC Dương Quảng Hàm, Phường 6, Gò Vấp, TP.HCM",
+    price: "3.400.000 vnđ",
+    category: "Gò Vấp",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Giặt xấy 100k/12 lần"], // Update to color codes
     shortDescription:
-      "Country of origin: Türkiye. Trusted by many people because the carpet material is very good, the way the carpet is woven directly to the base creates durability and firmness for the product.",
+      "Nằm trong khu vực Gò Vấp, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "This Turkish carpet product will make your living room and bedroom space become luxurious, classy and cozy, more harmonious than ever. Suitable for all designs with many different Quận 3 items, creating an impressive and harmonious style for the living room or bedroom space. Material: Synthetic Fiber (Polypropylene + Polyester). European point weaving technology. The product meets German Oeko-Tex 100 quality standards. Long-term use and easy to clean or clean normally. The carpet is used to decorate a variety of living rooms or bedrooms with impressive and very beautiful and luxurious color patterns. The carpet's fur is woven to create firmness and the base has good grip on the floor, so it does not move during use. The carpet is carefully selected from raw materials to the production stage, so it is very safe for users as well as ensuring strict standards from the manufacturer at the Turkish carpet factory.",
-    reviews: 4, // Add a field for customer reviews
-    sku: " THA651 TH034-12", // Add a field for SKU
-    tags: ["Furniture", "Carpet", "Modern"], // Add tags
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 14, // Add a field for customer reviews
+    sku: "14", // Add a field for SKU
+    tags: ["Không gác"], // Add tags
     images: [
-      "../images/list/thamts1.jpg", // Main image
-      "../images/list/thamts2.jpg",
-      "../images/list/thamts3.jpg", // Thumbnail imag
+      "../images/list/14.1.jpg", // Main image
+      "../images/list/14.2.jpg",
+      "../images/list/14.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/thamts1.jpg",
+    cover: "../images/list/14.4.jpg",
     relatedImages: [
-      "../images/list/tham1.jpg", // Related image 1
-      "../images/list/tham3.jpg", // Related image 2
+      "../images/list/14.5.jpg", // Related image 1
+      "../images/list/14.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 22,
-    name: "Rainbow Curtains",
-    price: "300$",
-    category: "Quận 3",
+    name: "36MC Dương Quảng Hàm, Phường 6, Gò Vấp, TP.HCM",
+    price: "4.200.000 vnđ",
+    category: "Gò Vấp",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Giặt xấy 100k/12 lần"], // Update to color codes
     shortDescription:
-      "Description: When you love a light-filled room but occasionally need privacy, Korean rainbow combi blinds are the perfect solution. Designed with alternating sheer and semi-opaque fabrics, rainbow combi blinds are made with two parallel layers of fabric allowing for complete light control. Close and align the sheer and sheer strips to achieve the different levels of light into the room you want.",
+      "Nằm trong khu vực Gò Vấp, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Description: When you love a room filled with light but occasionally need privacy, the Korean rainbow combi blind is the perfect solution. Designed with alternating sheer and semi-opaque fabrics, the rainbow combi blind is made with two parallel layers of fabric allowing for complete light control. Close and align the sheer and sheer strips to achieve the different levels of light entering the room that you want. Rainbow blinds are the latest in window decoration, this blind model uses 2 layers of sliding fabric with alternating transparent and blackout horizontal strips. This unique design for light control is simple but surprisingly effective and allows you to achieve the perfect balance between light and privacy. Our top quality rainbow roller blinds are manufactured and imported directly from Korea and are very safe for users. Especially the elderly and children.",
-    reviews: 1, // Add a field for customer reviews
-    sku: " REM6521 RE034-12", // Add a field for SKU
-    tags: ["Furniture", "Curtains", "Modern"], // Add tags
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 14, // Add a field for customer reviews
+    sku: "36", // Add a field for SKU
+    tags: ["Gác", "Cửa sổ"], // Add tags
     images: [
-      "../images/list/remcua1.jpg", // Main image
-      "../images/list/remcua2.jpg",
-      "../images/list/remcua3.jpg", // Thumbnail imag
+      "../images/list/36.1.jpg", // Main image
+      "../images/list/36.2.jpg",
+      "../images/list/36.7.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/remcua1.jpg",
+    cover: "../images/list/36.4.jpg",
     relatedImages: [
-      "../images/list/tranh1.webp", // Related image 1
-      "../images/list/tranh2.webp", // Related image 2
+      "../images/list/36.5.jpg", // Related image 1
+      "../images/list/36.6.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
   {
     id: 23,
-    name: "Buddha Hanging Painting",
-    price: "700$",
-    category: "Quận 3",
+    name: "301AM Cộng Hoà, Phường 12, Quận Tân Bình, TP.HCM",
+    price: "5.800.000 vnđ",
+    category: "Tân Bình",
     material: "Leather",
-    utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
+    utilities: ["Ban công"], // Update to color codes
     shortDescription:
-      "Buddhist wall art offers a serene and contemplative addition to any space, reflecting the spiritual essence and profound wisdom of Buddhism. These artworks often feature intricate depictions of Buddhist symbols, deities, and serene landscapes, designed to inspire peace and mindfulness",
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
     longDescription:
-      "Buddhist wall art provides a profound addition to any space, reflecting the serenity and depth of Buddhist traditions. Featuring intricate designs such as Buddha figures, mandalas, lotus flowers, and Bodhisattvas, these artworks are crafted with high-quality materials like canvas, wood, traditional paper, and sometimes metal or stone, offering both durability and visual appeal. The art serves multiple purposes beyond decoration: it aids in meditation by providing a focal point, acts as a reminder of spiritual values such as compassion and wisdom, and enhances the aesthetic of any room with its elegance. Choosing the right piece involves considering personal connection, room size, and color style, while proper care—avoiding direct sunlight, regular dusting, and climate control—ensures the art's longevity. Ultimately, Buddhist wall art is a timeless element that adds sophistication and tranquility to your space, reflecting a rich cultural heritage and offering a source of inspiration and peace.",
-    reviews: 1, // Add a field for customer reviews
-    sku: " BUH6565 BU1034-12", // Add a field for SKU
-    tags: ["Furniture", "Painting", "Modern"], // Add tags
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 9, // Add a field for customer reviews
+    sku: "301", // Add a field for SKU
+    tags: ["Full nội thất"], // Add tags
     images: [
-      "../images/list/tranh1.webp", // Main image
-      "../images/list/tranh2.webp",
-      "../images/list/tranh3.webp", // Thumbnail imag
+      "../images/list/301.6.jpg", // Main image
+      "../images/list/301.5.jpg",
+      "../images/list/301.3.jpg", // Thumbnail imag
       // Thumbnail image
     ],
-    cover: "../images/list/tranh1.webp",
+    cover: "../images/list/301.4.jpg",
     relatedImages: [
-      "../images/list/tranhtr1.webp", // Related image 1
-      "../images/list/tranhtr2.webp", // Related image 2
+      "../images/list/301.2.jpg", // Related image 1
+      "../images/list/301.1.jpg", // Related image 2
     ],
     detail: "Xem Thêm",
   },
@@ -635,7 +700,7 @@ export const list = [
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "The wall mirror is a stylish and functional addition to any space, designed to enhance both aesthetics and practicality. With its sleek frame and high-quality reflective surface, this mirror not only provides a clear, distortion-free view but also adds a touch of elegance to your decor. Ideal for any room, from the entryway to the bathroom or living room, it helps to create a sense of space and light.",
+      "The wall mirror is a stylish and functional addition to any space, designed to enhance both aesthetics and practicality. With its sleek frame and high-quality reflective surface, this mirror not only provides a clear, distortion-free view but also adds a touch of elegance to your decor. Ideal for any room, from the entryway to the Bình Thạnh or living room, it helps to create a sense of space and light.",
     longDescription:
       "A wall mirror is a versatile and elegant addition to any space, seamlessly blending aesthetics with functionality. Its design, encompassing a variety of shapes—rectangular, round, oval, and custom—along with diverse frame materials such as wood, metal, and glass, enhances the visual appeal of any room. Beyond its decorative role, a wall mirror serves practical purposes, such as creating the illusion of space in smaller areas, enhancing natural and artificial lighting, and providing a convenient reflection for daily routines. Strategically placed according to Feng Shui principles, it can improve the flow of positive energy and contribute to a harmonious atmosphere. Maintenance involves regular cleaning with gentle products and protecting the mirror from physical damage and excessive humidity. With its ability to brighten and enlarge spaces, a well-chosen wall mirror not only adds sophistication but also supports functionality, making it an essential element in both residential and commercial settings.",
     reviews: 21, // Add a field for customer reviews
@@ -712,7 +777,7 @@ export const list = [
     id: 28,
     name: "Neoclassical Kitchen Cabinets",
     price: "10.000$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -739,7 +804,7 @@ export const list = [
     id: 30,
     name: "Cupboard Kitchen",
     price: "9.000$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -767,7 +832,7 @@ export const list = [
     id: 31,
     name: "Table Kitchen",
     price: "10.500.000$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -795,7 +860,7 @@ export const list = [
     id: 32,
     name: "Faucet 1",
     price: "6.000$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -823,7 +888,7 @@ export const list = [
     id: 33,
     name: "Faucet 2",
     price: "6.500$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -851,7 +916,7 @@ export const list = [
     id: 34,
     name: "Food Cart 1",
     price: "3.500$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -879,7 +944,7 @@ export const list = [
     id: 35,
     name: "Food Cart 2",
     price: "3.500$",
-    category: "Room Kitchen",
+    category: "Quận 1",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -964,7 +1029,7 @@ export const list = [
     id: 38,
     name: "Bathtub Faucet DL506",
     price: "900$",
-    category: "Bathroom",
+    category: "Bình Thạnh",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -992,7 +1057,7 @@ export const list = [
     id: 39,
     name: "Bathtub Faucet DL776",
     price: "850$",
-    category: "Bathroom",
+    category: "Bình Thạnh",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -1020,7 +1085,7 @@ export const list = [
     id: 40,
     name: "Shower DL442",
     price: "500$",
-    category: "Bathroom",
+    category: "Bình Thạnh",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
@@ -1048,13 +1113,13 @@ export const list = [
     id: 41,
     name: "Bathtub BH223",
     price: "15.000$",
-    category: "Bathroom",
+    category: "Bình Thạnh",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "A bathtub is a luxurious addition to any bathroom, offering a relaxing and comfortable bathing experience. Available in various styles and materials, such as freestanding, alcove, or corner tubs, it enhances the bathroom's functionality and aesthetic appeal. With features like built-in jets or ergonomic designs, it provides both style and comfort for a rejuvenating soak.",
+      "A bathtub is a luxurious addition to any Bình Thạnh, offering a relaxing and comfortable bathing experience. Available in various styles and materials, such as freestanding, alcove, or corner tubs, it enhances the Bình Thạnh's functionality and aesthetic appeal. With features like built-in jets or ergonomic designs, it provides both style and comfort for a rejuvenating soak.",
     longDescription:
-      "A bathtub is an essential feature for any bathroom, offering a space for relaxation and self-care. Whether you prefer a sleek freestanding tub, a classic alcove design, or a space-saving corner model, there’s a variety to suit every style and need. Modern bathtubs often include features like built-in jets, heated surfaces, and ergonomic designs to enhance comfort and luxury. Its presence not only elevates the bathroom's functionality but also adds a touch of elegance to your home.",
+      "A bathtub is an essential feature for any Bình Thạnh, offering a space for relaxation and self-care. Whether you prefer a sleek freestanding tub, a classic alcove design, or a space-saving corner model, there’s a variety to suit every style and need. Modern bathtubs often include features like built-in jets, heated surfaces, and ergonomic designs to enhance comfort and luxury. Its presence not only elevates the Bình Thạnh's functionality but also adds a touch of elegance to your home.",
     reviews: 16, // Add a field for customer reviews
     sku: "KY-1401 BH223", // Add a field for SKU
     tags: ["Furniture", "Bathtub", "Modern"], // Add tags
@@ -1076,13 +1141,13 @@ export const list = [
     id: 42,
     name: "Bathtub GH311",
     price: "19.000$",
-    category: "Bathroom",
+    category: "Bình Thạnh",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "A bathtub is a luxurious addition to any bathroom, offering a relaxing and comfortable bathing experience. Available in various styles and materials, such as freestanding, alcove, or corner tubs, it enhances the bathroom's functionality and aesthetic appeal. With features like built-in jets or ergonomic designs, it provides both style and comfort for a rejuvenating soak.",
+      "A bathtub is a luxurious addition to any Bình Thạnh, offering a relaxing and comfortable bathing experience. Available in various styles and materials, such as freestanding, alcove, or corner tubs, it enhances the Bình Thạnh's functionality and aesthetic appeal. With features like built-in jets or ergonomic designs, it provides both style and comfort for a rejuvenating soak.",
     longDescription:
-      "A bathtub is an essential feature for any bathroom, offering a space for relaxation and self-care. Whether you prefer a sleek freestanding tub, a classic alcove design, or a space-saving corner model, there’s a variety to suit every style and need. Modern bathtubs often include features like built-in jets, heated surfaces, and ergonomic designs to enhance comfort and luxury. Its presence not only elevates the bathroom's functionality but also adds a touch of elegance to your home.",
+      "A bathtub is an essential feature for any Bình Thạnh, offering a space for relaxation and self-care. Whether you prefer a sleek freestanding tub, a classic alcove design, or a space-saving corner model, there’s a variety to suit every style and need. Modern bathtubs often include features like built-in jets, heated surfaces, and ergonomic designs to enhance comfort and luxury. Its presence not only elevates the Bình Thạnh's functionality but also adds a touch of elegance to your home.",
     reviews: 16, // Add a field for customer reviews
     sku: "KY-1401 BH223", // Add a field for SKU
     tags: ["Furniture", "Bathtub", "Modern"], // Add tags
@@ -1105,13 +1170,13 @@ export const list = [
     id: 43,
     name: "Lavabo GH223",
     price: "5.900$",
-    category: "Bathroom",
+    category: "Bình Thạnh",
     material: "Leather",
     utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
     shortDescription:
-      "A bathroom sink is a practical fixture designed for daily use. Available in various styles and materials, it provides a functional space for washing hands, brushing teeth, and other personal hygiene tasks. Its design enhances the bathroom's aesthetics while ensuring durability and ease of maintenance.",
+      "A Bình Thạnh sink is a practical fixture designed for daily use. Available in various styles and materials, it provides a functional space for washing hands, brushing teeth, and other personal hygiene tasks. Its design enhances the Bình Thạnh's aesthetics while ensuring durability and ease of maintenance.",
     longDescription:
-      "A bathroom sink is an essential fixture that combines functionality with style. Designed for daily routines like hand washing and brushing teeth, it is available in a variety of shapes, sizes, and materials such as porcelain, glass, and stainless steel. Modern sinks often come with features like integrated vanities or countertop space, adding convenience and enhancing organization. The sink's design can significantly impact the bathroom's overall look, with options ranging from sleek and contemporary to classic and traditional. Easy to maintain and durable, a well-chosen bathroom sink not only fulfills practical needs but also complements and elevates your bathroom decor.",
+      "A Bình Thạnh sink is an essential fixture that combines functionality with style. Designed for daily routines like hand washing and brushing teeth, it is available in a variety of shapes, sizes, and materials such as porcelain, glass, and stainless steel. Modern sinks often come with features like integrated vanities or countertop space, adding convenience and enhancing organization. The sink's design can significantly impact the Bình Thạnh's overall look, with options ranging from sleek and contemporary to classic and traditional. Easy to maintain and durable, a well-chosen Bình Thạnh sink not only fulfills practical needs but also complements and elevates your Bình Thạnh decor.",
     reviews: 12, // Add a field for customer reviews
     sku: "KY-1401 GH223", // Add a field for SKU
     tags: ["Furniture", "Lavabo", "Modern"], // Add tags

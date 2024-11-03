@@ -15,10 +15,10 @@ import AllProduct from "../products/AllProduct";
 
 const InteriorDesign = () => {
   // State lưu trữ giá trị của các bộ lọc
-  const [minPrice, setMinPrice] = useState(0);
-  const [maxPrice, setMaxPrice] = useState(30000);
+  const [minPrice, setMinPrice] = useState(0); // Giá trị khởi điểm là 1.000.000
+  const [maxPrice, setMaxPrice] = useState(10000000);
   const [nameFilter, setNameFilter] = useState("");
-  const [sortBy, setSortBy] = useState("Sort by Rated");
+  const [sortBy, setSortBy] = useState("Tất cả");
   const [showSortDropdown, setShowSortDropdown] = useState(false);
 
   // Hàm để chuyển giá từ chuỗi về số
@@ -35,12 +35,12 @@ const InteriorDesign = () => {
     }
   };
 
-  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Interior Design"
+  // Hàm lọc sản phẩm dựa trên bộ lọc và category là "Tân Bình"
   const filteredProducts = list.filter((product) => {
     const productPrice = parsePrice(product.price); // Lấy giá sản phẩm dưới dạng số
 
-    // Chỉ hiển thị sản phẩm có category là "Interior Design"
-    const matchesCategory = product.category === "Interior Design";
+    // Chỉ hiển thị sản phẩm có category là "Tân Bình"
+    const matchesCategory = product.category === "Quận 3";
 
     // Lọc theo khoảng giá
     const matchesPrice =
@@ -58,11 +58,11 @@ const InteriorDesign = () => {
   // Sắp xếp sản phẩm theo sortBy
   const sortedProducts = filteredProducts.sort((a, b) => {
     switch (sortBy) {
-      case "Sort by Price: ↑":
+      case "Sắp xếp theo giá: ↑":
         return parsePrice(a.price) - parsePrice(b.price);
-      case "Sort by Price: ↓":
+      case "Sắp xếp theo giá: ↓":
         return parsePrice(b.price) - parsePrice(a.price);
-      case "Sort by Rated":
+      case "Tất cả":
         return b.reviews - a.reviews;
       default:
         return 0;
@@ -73,7 +73,7 @@ const InteriorDesign = () => {
     <>
       <section className="blog-out mb">
         <Back
-          title="INTERIOR DESIGN"
+          title="Quận 3"
           cover={img}
           icon1={icon1}
           icon2={icon2}
@@ -89,37 +89,38 @@ const InteriorDesign = () => {
                 <img src={pricedown} />
               </Icon>
               <div>
-                <p className="filter-title">Lowest price</p>
+                <p className="filter-title">Giá</p>
                 <label>
-                  From: {minPrice.toLocaleString()}$
+                  Từ: {minPrice.toLocaleString()} vnđ
                   <input
                     type="range"
                     min="0"
-                    max="3000"
+                    max="3000000"
                     value={minPrice}
                     onChange={(e) => setMinPrice(Number(e.target.value))}
-                    step="3000"
+                    step="1000000"
                     className="slider"
                   />
                 </label>
               </div>
             </div>
 
+            {/* Lọc theo giá (giá tối đa) */}
             <div className="filter-item">
               <Icon>
                 <img src={priceup} />
               </Icon>
               <div>
-                <p className="filter-title">Maximum price</p>
+                <p className="filter-title">Giá</p>
                 <label>
-                  To: {maxPrice.toLocaleString()}$
+                  Đến: {maxPrice.toLocaleString()} vnđ
                   <input
                     type="range"
-                    min="10000"
-                    max="50000"
+                    min="5000000"
+                    max="10000000"
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Number(e.target.value))}
-                    step="10000"
+                    step="5000000"
                     className="slider"
                   />
                 </label>
@@ -137,6 +138,7 @@ const InteriorDesign = () => {
                 onChange={(e) => setNameFilter(e.target.value)} // Cập nhật giá trị lọc theo tên
               />
             </div>
+
             {/* Bộ lọc sắp xếp */}
             <div className="sort-wrapper">
               <p
@@ -151,21 +153,21 @@ const InteriorDesign = () => {
                 <div className="dropdown-content">
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sort by Rated")}
+                    onClick={() => setSortBy("Tất cả")}
                   >
-                    Sort by Rated
+                    Tất cả
                   </div>
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sort by Price: ↑")}
+                    onClick={() => setSortBy("Sắp xếp theo giá: ↑")}
                   >
-                    Sort by Price: ↑
+                    Sắp xếp theo giá: ↑
                   </div>
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sort by Price: ↓")}
+                    onClick={() => setSortBy("Sắp xếp theo giá: ↓")}
                   >
-                    Sort by Price: ↓
+                    Sắp xếp theo giá: ↓
                   </div>
                 </div>
               )}
