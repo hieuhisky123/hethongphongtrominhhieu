@@ -72,8 +72,8 @@ const Hero = () => {
           Sinh Viên
         </h1>
         <h3>
-          Bring Serenity to
-          <br /> Your Place
+          Hệ Thống Nhà Trọ
+          <br /> Sinh Viên
         </h3>
         <p>
           Phòng trọ sạch sẽ, tiện nghi, giá cả sinh viên
