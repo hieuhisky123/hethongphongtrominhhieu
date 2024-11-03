@@ -22,7 +22,6 @@ const AllProduct = ({ products }) => {
   console.log("sang", car);
   const [showWishlist, setShowWishlist] = useState(false);
 
-  // Function to add an item to the wishlist
   // Function to remove an item from the wishlist
   const handleRemoveItem = (id) => {
     setWishlist((prevWishlist) => {
@@ -51,33 +50,27 @@ const AllProduct = ({ products }) => {
                 </Text>
                 <Price>{price}</Price>
               </Link>
-              <Overlay className="overlay">
-                {/* <Link to={"/wishlist"}> */}
+              {/* <Overlay className="overlay">
                 <button
                   className="wishlist-button"
-                  // onClick={(e) => {
-                  //   e.preventDefault(); // Prevent navigation on wishlist button click
-                  //   addToWishlist({ id, cover, category, name, price });
-                  // }}
                   onClick={() => handleAddToCart(val)}
                 >
                   <FaHeart />
                 </button>
-                {/* </Link> */}
-              </Overlay>
+              </Overlay> */}
             </Box>
           );
         })}
       </Content>
 
-      {/* Show wishlist modal */}
+      {/* Show wishlist modal
       {showWishlist && (
         <Wishlist
           wishlistItems={wishlist}
           onClose={() => setShowWishlist(false)}
           onRemoveItem={handleRemoveItem}
         />
-      )}
+      )} */}
     </>
   );
 };

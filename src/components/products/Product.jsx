@@ -102,7 +102,7 @@ const Product = ({ onUpdateWishlistCount }) => {
     <>
       <section className="blog-out mb">
         <Back
-          title="Products"
+          title="Tất cả phòng"
           cover={img}
           icon1={icon1}
           icon2={icon2}

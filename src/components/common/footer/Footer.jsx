@@ -2,15 +2,12 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import {
   FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaPinterestP,
+  FaFacebookMessenger,
   FaLeaf,
   FaArrowUp,
 } from "react-icons/fa";
-import aptech from "../../images/aptech.png";
+import { SiZalo } from "react-icons/si";
 import Logo from "../../images/Logo1.png";
-import Logo5 from "../../images/logo5.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
@@ -52,9 +49,7 @@ const Footer = () => {
     <FooterContainer>
       <TopSection>
         <BrandName data-aos="fade-up">HomeStyler</BrandName>
-        <SubscriptionText>
-          Subscribe to get 10% off your first order
-        </SubscriptionText>
+        <SubscriptionText>Hệ Thống Nhà Trọ Sinh Viên</SubscriptionText>
         <EmailInputWrapper data-aos="fade-down">
           <EmailInput type="email" placeholder="Enter your email..." />
           <SendButton>
@@ -65,29 +60,35 @@ const Footer = () => {
       <Border />
       <BottomSection>
         <SocialIcons data-aos="fade-up">
-          <a href="#">
+          <a href="https://www.facebook.com/profile.php?id=100049668137817">
             <FaFacebookF />
           </a>
-          <a href="#">
-            <FaTwitter />
+          <a
+            href="https://zalo.me/0817590805"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SiZalo />
           </a>
-          <a href="#">
-            <FaInstagram />
+          <a
+            href="https://m.me/100049668137817"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebookMessenger />
           </a>
         </SocialIcons>
         <FooterNav>
-          <Link to="/about">About</Link>
-          <Link to="/product">Product</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/about">Giới Thiệu</Link>
+          <Link to="/product">Xem Phòng</Link>
+          <Link to="/contact">Liên Hệ</Link>
         </FooterNav>
       </BottomSection>
       <CopyrightText>
-        COPYRIGHT 2024 © BIFTHI. ALL RIGHTS RESERVED.
+        COPYRIGHT 2024 © MINHHIEU ALL RIGHTS RESERVED.
       </CopyrightText>
       <Logo1>
-        <img src={aptech} alt="" />
         <img src={Logo} alt="" />
-        <img src={Logo5}/>
       </Logo1>
       {/* Nút cuộn lên */}
       <ScrollArrow onClick={scrollTop} show={showScroll}>

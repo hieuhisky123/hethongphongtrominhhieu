@@ -13,7 +13,7 @@ const Header = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
   // const [wishlistCount, setWishlistCount] = useState(0); // Số lượng sản phẩm trong wishlist
   const { car } = useContext(Crecontext); // Lấy dữ liệu từ context
-  const wishlistCount = car.length; 
+  const wishlistCount = car.length;
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -64,14 +64,14 @@ const Header = () => {
           </ul>
         </MenuLeft>
         {/* Hiển thị số lượng wishlist bên cạnh biểu tượng trái tim */}
-        <WishlistIcon>
+        {/* <WishlistIcon>
           <Link to="/wishlist">
             <FaHeart className="rawf-rtrt"  size={24} />
             {wishlistCount > 0 && (
               <WishlistCount>{wishlistCount}</WishlistCount>
             )}
           </Link>
-        </WishlistIcon>
+        </WishlistIcon> */}
         <MenuMobile>
           <img src={mn1} alt="menu" onClick={handleShow} />
         </MenuMobile>
@@ -118,7 +118,7 @@ const Container = styled.div`
   padding: 10px 60px;
   background: ${(props) =>
     props.scrollPosition > 50 ? "rgba(255, 255, 255, 0.8)" : ""};
-    position: relative;
+  position: relative;
 `;
 
 const Menudestop = styled.div`
@@ -190,21 +190,21 @@ const HoverStyled = styled.div`
   }
 `;
 const LogoImgio = styled.div`
-@media screen and (min-width: 320px) and (max-width: 460px) {
-  display: none;
-}
+  @media screen and (min-width: 320px) and (max-width: 460px) {
+    display: none;
+  }
   img {
     width: 100%;
   }
 `;
 const LogoImg = styled.div`
-position: absolute;
-top: 0;
-left: 0px;
-@media screen and (min-width: 460px) {
-  width: 500px;
- display: none;
-}
+  position: absolute;
+  top: 0;
+  left: 0px;
+  @media screen and (min-width: 460px) {
+    width: 500px;
+    display: none;
+  }
 `;
 
 const WishlistIcon = styled.div`
@@ -213,7 +213,7 @@ const WishlistIcon = styled.div`
   position: relative;
   cursor: pointer;
   @media screen and (min-width: 320px) and (max-width: 460px) {
-    .rawf-rtrt{
+    .rawf-rtrt {
       position: absolute;
       top: -10px;
       right: -260px;

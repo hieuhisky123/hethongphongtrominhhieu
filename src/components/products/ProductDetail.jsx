@@ -129,19 +129,15 @@ const ProductDetail = () => {
         </div>
         <div className="product-bottom">
           <div className="tabs">
-            <button className="active-tab" onClick={() => setShowdes(!showdes)}>
-              Description
-            </button>
-            <button onClick={() => setShow(!show)}>
+            <button className="active-tab">Mô tả</button>
+            {/* <button onClick={() => setShow(!show)}>
               Reviews ({product.reviews})
-            </button>
+            </button> */}
           </div>
-          {show && <Reviews />}
-          {showdes && (
-            <div className="tab-content">
-              <p>{product.longDescription}</p>
-            </div>
-          )}
+          <div className="tab-content">
+            <p>{product.longDescription}</p>
+          </div>
+
           <div className="related-images">
             {product.relatedImages.map((img, index) => (
               <div key={index} className="related-image-wrapper">

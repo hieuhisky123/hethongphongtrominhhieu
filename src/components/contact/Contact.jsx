@@ -7,6 +7,8 @@ import icon1 from "../images/Armchair.png";
 import icon2 from "../images/Roundchair.png";
 import icon3 from "../images/Stool.png";
 import icon4 from "../images/Wardrobe.png";
+import { FaFacebookMessenger, FaFacebook } from "react-icons/fa";
+import { SiZalo } from "react-icons/si";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -78,8 +80,10 @@ const Contact = () => {
           icon4={icon4}
         />
         <ContactContainer>
-          <FormSection>
-            <Title><h1>Your Information</h1></Title>
+          {/* <FormSection>
+            <Title>
+              <h1>Your Information</h1>
+            </Title>
             <Title>Your Information</Title>
             <form onSubmit={handleSubmit}>
               <InputWrapper>
@@ -133,10 +137,39 @@ const Contact = () => {
 
               <SubmitButton type="submit">Send a message</SubmitButton>
             </form>
-          </FormSection>
+          </FormSection> */}
+          <ContactInfoSection>
+            <ContactInfo>
+              <h2>Liên Hệ</h2>
+              <ContactIcons>
+                <IconLink
+                  href="https://zalo.me/0817590805"
+                  target="_blank"
+                  aria-label="Zalo"
+                >
+                  <SiZalo />
+                </IconLink>
+                <IconLink
+                  href="https://m.me/100049668137817"
+                  target="_blank"
+                  aria-label="Messenger"
+                >
+                  <FaFacebookMessenger />
+                </IconLink>
+                <IconLink
+                  href="https://www.facebook.com/profile.php?id=100049668137817"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook />
+                </IconLink>
+              </ContactIcons>
+              <PhoneNumber>Phone: 0817590805</PhoneNumber>
+            </ContactInfo>
+          </ContactInfoSection>
           <MapSection>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7838.650633325494!2d106.66142607769243!3d10.786376961936199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed23c80767d%3A0x5a981a5efee9fd7d!2zNTkwIMSQLiBDw6FjaCBN4bqhbmcgVGjDoW5nIDgsIFBoxrDhu51uZyAxMSwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oIDcwMDAwLCBWaWV0bmFt!5e0!3m2!1sen!2sus!4v1726776446785!5m2!1sen!2sus"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.865728361669!2d106.63667547480551!3d10.821585989329941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752965bc5d5347%3A0x1bd8bad85f701812!2zMTc4IFBo4bqhbSBWxINuIELhuqFjaCwgUGjGsOG7nW5nIDE1LCBUw6JuIELDrG5oLCBI4buTIENow60gTWluaCA3MDAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1730612928172!5m2!1svi!2s"
               width="600"
               height="450"
               // style="border:0;"
@@ -161,74 +194,109 @@ const ContactContainer = styled.div`
   }
 `;
 
-const FormSection = styled.div`
-  width: 45%;
+// const FormSection = styled.div`
+//   width: 45%;
+//   @media (max-width: 768px) {
+//     width: 100%;
+//     margin-bottom: 30px;
+//   }
+//   form {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// `;
+
+// const Title = styled.h2`
+//   padding: 10px;
+//   h1 {
+//     font-size: 28px;
+//     font-weight: bold;
+//     margin-bottom: 20px;
+//   }
+//   @media screen and (min-width: 320px) and (max-width: 460px) {
+//     h1 {
+//       font-size: 18px;
+//       text-align: center;
+//     }
+//   }
+//   @media screen and (min-width: 460px) and (max-width: 760px) {
+//     h1 {
+//       font-size: 24px;
+//       text-align: center;
+//     }
+//   }
+// `;
+
+// const InputWrapper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   margin-bottom: 20px;
+
+//   label {
+//     font-size: 16px;
+//     margin-bottom: 5px;
+//   }
+
+//   input,
+//   textarea {
+//     padding: 10px;
+//     border: 1px solid #ccc;
+//     border-radius: 5px;
+//     font-size: 16px;
+//   }
+//   textarea {
+//     height: 100px;
+//     resize: none;
+//   }
+// `;
+
+// const SubmitButton = styled.button`
+//   background-color: #333;
+//   color: #fff;
+//   border: none;
+//   padding: 15px;
+//   font-size: 16px;
+//   cursor: pointer;
+//   border-radius: 5px;
+
+//   &:hover {
+//     background-color: #555;
+//   }
+// `;
+
+const ContactInfoSection = styled.div`
+  width: 40%;
+  text-align: center;
   @media (max-width: 768px) {
     width: 100%;
     margin-bottom: 30px;
   }
-  form {
-    display: flex;
-    flex-direction: column;
-  }
 `;
 
-const Title = styled.h2`
-padding: 10px;
-h1{
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-  @media screen and (min-width: 320px) and (max-width: 460px) {
-h1{
-  font-size: 18px;
-  text-align: center;
-}
-  }
-  @media screen and (min-width: 460px) and (max-width: 760px) {
-h1{
-  font-size: 24px;
-  text-align: center;
-}
-  }
+const ContactInfo = styled.div`
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
 `;
 
-const InputWrapper = styled.div`
+const ContactIcons = styled.div`
   display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+`;
 
-  label {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  input,
-  textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  textarea {
-    height: 100px;
-    resize: none;
+const IconLink = styled.a`
+  font-size: 24px;
+  color: #333;
+  &:hover {
+    color: #555;
   }
 `;
 
-const SubmitButton = styled.button`
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 15px;
+const PhoneNumber = styled.p`
   font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-
-  &:hover {
-    background-color: #555;
-  }
+  color: #333;
 `;
 
 const MapSection = styled.div`
