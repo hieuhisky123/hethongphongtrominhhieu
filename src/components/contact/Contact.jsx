@@ -140,7 +140,7 @@ const Contact = () => {
           </FormSection> */}
           <ContactInfoSection>
             <ContactInfo>
-              <h2>Liên Hệ</h2>
+              <h2>Liên Hệ : Mr. Hiếu</h2>
               <ContactIcons>
                 <IconLink
                   href="https://zalo.me/0817590805"
@@ -165,6 +165,34 @@ const Contact = () => {
                 </IconLink>
               </ContactIcons>
               <PhoneNumber>Phone: 0817590805</PhoneNumber>
+            </ContactInfo>
+
+            <ContactInfo>
+              <h2>Liên Hệ : Mr. An</h2>
+              <ContactIcons>
+                <IconLink
+                  href="https://zalo.me/0938739530"
+                  target="_blank"
+                  aria-label="Zalo"
+                >
+                  <SiZalo />
+                </IconLink>
+                <IconLink
+                  href="https://m.me/61561736154560"
+                  target="_blank"
+                  aria-label="Messenger"
+                >
+                  <FaFacebookMessenger />
+                </IconLink>
+                <IconLink
+                  href="https://www.facebook.com/profile.php?id=61561736154560&mibextid=LQQJ4d"
+                  target="_blank"
+                  aria-label="Facebook"
+                >
+                  <FaFacebook />
+                </IconLink>
+              </ContactIcons>
+              <PhoneNumber>Phone: 0938739530</PhoneNumber>
             </ContactInfo>
           </ContactInfoSection>
           <MapSection>
@@ -265,18 +293,21 @@ const ContactContainer = styled.div`
 // `;
 
 const ContactInfoSection = styled.div`
-  width: 40%;
+  width: 45%;
   text-align: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
   @media (max-width: 768px) {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 `;
 
 const ContactInfo = styled.div`
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 20px 0;
 `;
 
 const ContactIcons = styled.div`
@@ -289,14 +320,17 @@ const ContactIcons = styled.div`
 const IconLink = styled.a`
   font-size: 24px;
   color: #333;
+  transition: color 0.3s;
+
   &:hover {
-    color: #555;
+    color: #007aff;
   }
 `;
 
 const PhoneNumber = styled.p`
   font-size: 16px;
   color: #333;
+  margin-top: 10px;
 `;
 
 const MapSection = styled.div`
@@ -306,13 +340,16 @@ const MapSection = styled.div`
 
   iframe {
     width: 100%;
+    height: 100%;
     border: 0;
+    border-radius: 10px;
   }
 
   @media (max-width: 768px) {
     width: 100%;
   }
 `;
+
 const ErrorText = styled.p`
   color: red;
   font-size: 14px;
