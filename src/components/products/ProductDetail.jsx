@@ -139,11 +139,13 @@ const ProductDetail = () => {
           </div>
 
           <div className="related-images">
-            {product.relatedImages.map((img, index) => (
-              <div key={index} className="related-image-wrapper">
-                <img src={img} alt={`related-thumbnail-${index}`} />
-              </div>
-            ))}
+            <RelatedImagesWrapper>
+              {product.relatedImages.map((img, index) => (
+                <div key={index} className="related-image-wrapper">
+                  <img src={img} alt={`related-thumbnail-${index}`} />
+                </div>
+              ))}
+            </RelatedImagesWrapper>
           </div>
         </div>
       </div>
@@ -161,7 +163,24 @@ const Wapper = styled.div`
     }
   }
 `;
+const RelatedImagesWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
 
+  .related-image-wrapper {
+    width: calc(50% - 10px); /* Chiều rộng cho mỗi ảnh khi trên màn hình lớn */
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 760px) {
+    flex-direction: column;
+
+    .related-image-wrapper {
+      width: 100%; /* Mỗi ảnh chiếm 100% chiều rộng khi trên màn hình điện thoại */
+    }
+  }
+`;
 const Icon = styled.div`
   img {
     width: 100%;
