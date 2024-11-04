@@ -665,60 +665,64 @@ export const list = [
     ],
     detail: "Xem Thêm",
   },
-  // {
-  //   id: 24,
-  //   name: "Eight Horses Painting",
-  //   price: "600$",
-  //   category: "Quận 3",
-  //   material: "Leather",
-  //   utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
-  //   shortDescription:
-  //     "The Eight Horses painting is a revered symbol of good fortune and prosperity in East Asian culture. Depicting eight powerful horses galloping energetically, this artwork embodies the dynamic spirit of success and progress. The number eight is considered highly auspicious, representing wealth and ambition.",
-  //   longDescription:
-  //     "In East Asian culture, horses are seen as symbols of strength, endurance, and freedom. They are revered for their speed and grace, qualities that translate into symbolic meanings related to personal and professional success. The  painting specifically features eight horses, which amplifies the symbolism due to the auspicious nature of the number eight. In Chinese culture, the number eight is considered extremely lucky because its pronunciation is similar to the word for wealth and prosperity . As a result, the painting is believed to attract good fortune, financial success, and positive energy. The dynamic portrayal of the horses in the painting conveys a sense of movement and vitality. Each horse is typically depicted in mid-gallop, suggesting a relentless pursuit of goals and ambitions. This imagery resonates deeply with the values of perseverance and achievement, making it a powerful symbol for anyone seeking to enhance their success in various aspects of life.",
-  //   reviews: 21, // Add a field for customer reviews
-  //   sku: " PHT131011 PH111034-12", // Add a field for SKU
-  //   tags: ["Furniture", "Painting", "Modern"], // Add tags
-  //   images: [
-  //     "../images/list/tranhtr1.webp", // Main image
-  //     "../images/list/tranhtr2.webp",
-  //     "../images/list/tranhtr3.webp", // Thumbnail imag
-  //     // Thumbnail image
-  //   ],
-  //   cover: "../images/list/tranhtr1.webp",
-  //   relatedImages: [
-  //     "../images/list/tranh1.webp", // Related image 1
-  //     "../images/list/tranh2.webp", // Related image 2
-  //   ],
-  //   detail: "Xem Thêm",
-  // },
-  // {
-  //   id: 25,
-  //   name: "Wall Mirro",
-  //   price: "450$",
-  //   category: "Quận 3",
-  //   material: "Leather",
-  //   utilities: ["#d3b8ae", "#c4c4c4", "#f4f4f4", "#efcdcd"], // Update to color codes
-  //   shortDescription:
-  //     "The wall mirror is a stylish and functional addition to any space, designed to enhance both aesthetics and practicality. With its sleek frame and high-quality reflective surface, this mirror not only provides a clear, distortion-free view but also adds a touch of elegance to your decor. Ideal for any room, from the entryway to the Bình Thạnh or living room, it helps to create a sense of space and light.",
-  //   longDescription:
-  //     "A wall mirror is a versatile and elegant addition to any space, seamlessly blending aesthetics with functionality. Its design, encompassing a variety of shapes—rectangular, round, oval, and custom—along with diverse frame materials such as wood, metal, and glass, enhances the visual appeal of any room. Beyond its decorative role, a wall mirror serves practical purposes, such as creating the illusion of space in smaller areas, enhancing natural and artificial lighting, and providing a convenient reflection for daily routines. Strategically placed according to Feng Shui principles, it can improve the flow of positive energy and contribute to a harmonious atmosphere. Maintenance involves regular cleaning with gentle products and protecting the mirror from physical damage and excessive humidity. With its ability to brighten and enlarge spaces, a well-chosen wall mirror not only adds sophistication but also supports functionality, making it an essential element in both residential and commercial settings.",
-  //   reviews: 21, // Add a field for customer reviews
-  //   sku: " GT131011 GH5521-12", // Add a field for SKU
-  //   tags: ["Furniture", "Mirro", "Modern"], // Add tags
-  //   images: [
-  //     "../images/list/guong1.jpg", // Main image
-  //     "../images/list/guong2.jpg",
-  //     "../images/list/guong3.jpg", // Thumbnail imag
-  //     // Thumbnail image
-  //   ],
-  //   cover: "../images/list/guong2.jpg",
-  //   relatedImages: [
-  //     "../images/list/bantr1.jpg", // Related image 1
-  //     "../images/list/bantr3.jpg", // Related image 2
-  //   ],
-  //   detail: "Xem Thêm",
-  // },
+  {
+    id: 24,
+    name: "231AM Cộng Hoà, Phường 12, Quận Tân Bình, TP.HCM",
+    price: "4.400.000 vnđ",
+    category: "Tân Bình",
+    material: "Leather",
+    utilities: ["4 người - 4 xe", "Cửa sổ thoáng", "Máy giặt chung"],
+    shortDescription:
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
+    longDescription:
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 21, // Add a field for customer reviews
+    sku: "231", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp"], // Add tags
+    images: [
+      "../images/list/231.1.jpg", // Main image
+      "../images/list/231.2.jpg",
+      "../images/list/231.4.jpg", // Thumbnail imag
+      // Thumbnail image
+    ],
+    cover: "../images/list/231.3.jpg",
+    relatedImages: [
+      "../images/list/231.5.jpg", // Related image 1
+      "../images/list/231.6.jpg", // Related image 2
+    ],
+    detail: "Xem Thêm",
+  },
+  {
+    id: 25,
+    name: "233AM Cộng Hoà, Phường 12, Quận Tân Bình, TP.HCM",
+    price: "4.300.000 vnđ",
+    category: "Tân Bình",
+    material: "Leather",
+    utilities: ["4 người - 4 xe", "Cửa sổ thoáng", "Máy giặt chung"],
+    shortDescription:
+      "Nằm trong khu vực Tân Bình, bạn sẽ dễ dàng tiếp cận các dịch vụ tiện ích như siêu thị, quán ăn, quán cà phê và các phương tiện giao thông công cộng.",
+    longDescription:
+      "Không gian sạch sẽ: Phòng được vệ sinh thường xuyên, đảm bảo môi trường sống luôn trong lành.\n" +
+      "- Ánh sáng tự nhiên: Các cửa sổ lớn giúp đón nắng và gió, mang lại cảm giác dễ chịu.\n" +
+      "- Giờ giấc tự do: Bạn hoàn toàn yên tâm về thời gian sinh hoạt của mình, không bị ràng buộc.",
+    reviews: 21, // Add a field for customer reviews
+    sku: "233", // Add a field for SKU
+    tags: ["Gác", "Máy lạnh", "Kệ bếp"], // Add tags
+    images: [
+      "../images/list/233.1.jpg", // Main image
+      "../images/list/233.2.jpg",
+      "../images/list/233.4.jpg", // Thumbnail imag
+      // Thumbnail image
+    ],
+    cover: "../images/list/233.3.jpg",
+    relatedImages: [
+      "../images/list/233.5.jpg", // Related image 1
+      "../images/list/233.6.jpg", // Related image 2
+    ],
+    detail: "Xem Thêm",
+  },
   // {
   //   id: 26,
   //   name: "Ceramic Vase",

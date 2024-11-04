@@ -6,6 +6,7 @@ import li1 from "../../../acsset/slice/li1.png";
 import { Link } from "react-router-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 const RecentCard = ({ products }) => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -17,39 +18,35 @@ const RecentCard = ({ products }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  AOS.init();
-  console.log("dssadsa", list);
+
   return (
     <Wapper>
-      <TitleWaper data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <TitleWaper>
         <h1>Phòng Mới Cập Nhật</h1>
         <Spanet>
           <p>Xem Thêm</p>
           <Link to={"/product"}>
             <div>
-              <img src={li1}></img>
+              <img src={li1} alt="More Icon" />
             </div>
           </Link>
         </Spanet>
       </TitleWaper>
-      <Container data-aos="fade-up" data-aos-anchor-placement="center-bottom">
-        {list?.slice(0, 4).map((item, index) => {
-          return (
-            <ContainerAll>
-              <Link to={`/product/${item.id}`}>
-                <img src={item.images[0]} />
-                <div>
-                  <h1>{item.name}</h1>
-                </div>
-                <p>{item.price}</p>
-
-                <div>
-                  <button>{item.detail}</button>
-                </div>
-              </Link>
-            </ContainerAll>
-          );
-        })}
+      <Container>
+        {list?.slice(0, 4).map((item, index) => (
+          <ContainerAll key={index}>
+            <Link to={`/product/${item.id}`}>
+              <img src={item.images[0]} alt={item.name} />
+              <div>
+                <h1>{item.name}</h1>
+              </div>
+              <p>{item.price}</p>
+              <div>
+                <button>{item.detail}</button>
+              </div>
+            </Link>
+          </ContainerAll>
+        ))}
       </Container>
     </Wapper>
   );
@@ -57,150 +54,108 @@ const RecentCard = ({ products }) => {
 
 export default RecentCard;
 
-const product = [
-  {
-    img: pr1,
-    title: "gế sofa",
-    price: "$15.00",
-    detaill: "Xem Thêm",
-  },
-  {
-    img: pr1,
-    title: "gế sofa",
-    price: "$15.00",
-    detaill: "Xem Thêm",
-  },
-  {
-    img: pr1,
-    title: "gế sofa",
-    price: "$15.00",
-    detaill: "Xem Thêm",
-  },
-  {
-    img: pr1,
-    title: "gế sofa",
-    price: "$15.00",
-    detaill: "Xem Thêm  ",
-  },
-];
+// Styled Components
 const Wapper = styled.div`
   width: 100%;
   max-width: 1440px;
-  margin: 0px auto;
+  margin: 0 auto;
+  padding: 20px;
 `;
-const Container = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
 
-  @media screen and (min-width: 320px) and (max-width: 760px) {
-    width: 100%;
-    gap: 10px;
-    padding: 10px;
-  }
-`;
-const ContainerAll = styled.div`
-  width: calc((100% - 156px) / 4);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding: 10px 5px;
-  &:hover {
-    transform: scale(1.05);
-    transition: all 0.25s linear;
-  }
-  h1 {
-    color: var(--Main-Colors-Gray-4, #292929);
-    font-family: "Work Sans";
-    font-size: 22.606px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: -1.13px;
-  }
-  p {
-    color: var(--Main-Colors-Gray-4, #292929);
-    font-family: "Work Sans";
-    font-size: 32.294px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 100%; /* 32.294px */
-    letter-spacing: -1.615px;
-  }
-  button {
-    color: #dcb47a;
-    font-family: "Work Sans";
-    font-size: 22.606px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 100%; /* 22.606px */
-    letter-spacing: -1.13px;
-    border-radius: 19.376px;
-    border: 1.615px solid #dcb47a;
-    background: var(--main-colors-green-05, #f6fff6);
-    padding: 6.459px 12.918px;
-  }
-  a {
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-  }
-  img {
-    width: 100%;
-    height: 300px;
-  }
-  @media screen and (min-width: 320px) and (max-width: 460px) {
-    width: 100%;
-  }
-  @media screen and (min-width: 460px) and (max-width: 760px) {
-    width: calc((100% - 104px) / 2);
-  }
-`;
 const TitleWaper = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 40px 20px;
+  align-items: center;
+  padding: 20px;
   h1 {
-    color: var(--font, #081323);
-    font-family: "Work Sans";
-    font-size: 42px;
-    font-style: normal;
+    color: #081323;
+    font-family: "Work Sans", sans-serif;
+    font-size: 36px;
     font-weight: 600;
-    line-height: normal;
+    text-align: center;
   }
-  @media screen and (min-width: 320px) and (max-width: 460px) {
+  @media (max-width: 460px) {
     h1 {
       font-size: 24px;
     }
-    p {
-      font-size: 16px;
-    }
   }
 `;
+
 const Spanet = styled.div`
   display: flex;
   align-items: center;
+  gap: 10px;
+  p {
+    font-size: 18px;
+    color: #4f4f4f;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  img {
+    width: 24px;
+    transition: transform 0.25s;
+  }
+  &:hover img {
+    transform: translateX(10px);
+  }
+`;
+
+const Container = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 20px;
+`;
+
+const ContainerAll = styled.div`
+  width: calc((100% - 60px) / 2);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s;
   &:hover {
-    img {
-      transform: translateX(100%);
-      transition: all 0.25s linear;
-      cursor: pointer;
-    }
+    transform: scale(1.05);
+  }
+  h1 {
+    font-size: 20px;
+    color: #292929;
+    font-family: "Work Sans", sans-serif;
+    margin-top: 10px;
+  }
+  p {
+    font-size: 18px;
+    color: #292929;
+    font-family: "Work Sans", sans-serif;
+    margin: 10px 0;
+  }
+  button {
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #dcb47a;
+    border: 1px solid #dcb47a;
+    border-radius: 5px;
+    background-color: #f6fff6;
+    cursor: pointer;
+    transition: background-color 0.25s;
+  }
+  button:hover {
+    background-color: #dcb47a;
+    color: #fff;
   }
   img {
     width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
-  p {
-    cursor: pointer;
-    color: var(--Gray-2, #4f4f4f);
-    font-family: "Work Sans";
-    font-size: 25.931px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-align: left;
+
+  @media (max-width: 460px) {
+    width: 100%;
+  }
+  @media (min-width: 460px) and (max-width: 760px) {
+    width: calc(50% - 10px);
   }
 `;

@@ -72,7 +72,7 @@ const Contact = () => {
     <>
       <section className="blog-out mb">
         <Back
-          title="CONTACT"
+          title="LIÊN HỆ"
           cover={img}
           icon1={icon1}
           icon2={icon2}
