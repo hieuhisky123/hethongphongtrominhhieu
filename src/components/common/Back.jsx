@@ -41,6 +41,10 @@ const BackgroundImage = styled.img`
   height: auto;
   object-fit: cover;
   aspect-ratio: 1920/400;
+
+  @media (max-width: 460px) {
+    height: 200px;
+  }
 `;
 
 const Content = styled.div`
@@ -56,6 +60,11 @@ const Title = styled.h1`
   font-weight: bold;
   margin-bottom: 10px;
   margin-top: 20px;
+
+  @media (max-width: 460px) {
+    font-size: 26px;
+    margin-top: 150px;
+  }
 `;
 
 const Breadcrumb = styled.p`
