@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Back from "../common/Back";
 import "../home/recent/recent.css";
 import img from "../images/about.jpg";
@@ -17,14 +17,13 @@ import pricedown from "../images/pricedown.png";
 import search from "../images/search.png";
 
 const Product = ({ onUpdateWishlistCount }) => {
-  // State lưu trữ giá trị của các bộ lọc
-  const [selectedCategories, setSelectedCategories] = useState([]); // Danh mục được chọn
-  const [nameFilter, setNameFilter] = useState(""); // Chuỗi tìm kiếm sản phẩm theo tên
-  const [showDropdown, setShowDropdown] = useState(false); // Hiển thị dropdown cho danh mục
-  const [minPrice, setMinPrice] = useState(0); // Giá trị tối thiểu
-  const [maxPrice, setMaxPrice] = useState(10000000); // Giá trị tối đa
-  const [sortBy, setSortBy] = useState("Sắp Xếp"); // Tiêu chí sắp xếp
-  const [showSortDropdown, setShowSortDropdown] = useState(false); // Hiển thị dropdown sắp xếp
+  const [selectedCategories, setSelectedCategories] = useState([]);
+  const [nameFilter, setNameFilter] = useState("");
+  const [showDropdown, setShowDropdown] = useState(false);
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(10000000);
+  const [sortBy, setSortBy] = useState("Sắp Xếp");
+  const [showSortDropdown, setShowSortDropdown] = useState(false);
 
   // Hàm chuyển đổi giá từ chuỗi thành số
   const parsePrice = (priceString) => {
@@ -39,59 +38,57 @@ const Product = ({ onUpdateWishlistCount }) => {
       return 0;
     }
   };
+  // Ref cho phần tử AllProduct
+  const allProductRef = useRef(null);
 
-  // Hàm xử lý khi thay đổi checkbox category
+  // Hàm cuộn tới phần tử AllProduct
+  const scrollToAllProduct = () => {
+    if (allProductRef.current) {
+      allProductRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handleCategoryChange = (category) => {
-    // Kiểm tra nếu category đã có trong danh sách selectedCategories
     if (selectedCategories.includes(category)) {
-      // Xóa category khỏi selectedCategories nếu đã có
       setSelectedCategories(
         selectedCategories.filter((cat) => cat !== category)
       );
     } else {
-      // Thêm category vào selectedCategories nếu chưa có
       setSelectedCategories([...selectedCategories, category]);
     }
+    scrollToAllProduct(); // Cuộn tới AllProduct khi chọn danh mục
   };
 
-  // Lấy tất cả các danh mục từ dữ liệu sản phẩm mà không trùng lặp
+  const handleSortChange = (sortOption) => {
+    setSortBy(sortOption);
+    setShowSortDropdown(false);
+    scrollToAllProduct(); // Cuộn tới AllProduct khi chọn sắp xếp
+  };
+
   const allCategories = [...new Set(list.map((item) => item.category))];
 
-  // Hàm lọc sản phẩm dựa trên các tiêu chí đã chọn
   const filteredProducts = list.filter((product) => {
-    const productPrice = parsePrice(product.price); // Chuyển đổi giá sản phẩm thành số
-
-    // Kiểm tra nếu sản phẩm thuộc một trong các danh mục đã chọn
+    const productPrice = parsePrice(product.price);
     const matchesCategory =
       selectedCategories.length > 0
         ? selectedCategories.includes(product.category)
         : true;
-
-    // Kiểm tra nếu giá sản phẩm nằm trong khoảng giá đã chọn
     const matchesPrice =
       (minPrice ? productPrice >= parsePrice(minPrice) : true) &&
       (maxPrice ? productPrice <= parsePrice(maxPrice) : true);
-
-    // Kiểm tra nếu tên sản phẩm có chứa chuỗi tìm kiếm
     const matchesName = nameFilter
       ? product.name.toLowerCase().includes(nameFilter.toLowerCase())
       : true;
-
-    // Trả về sản phẩm nếu thỏa mãn tất cả các điều kiện
     return matchesCategory && matchesPrice && matchesName;
   });
 
-  // Sắp xếp sản phẩm dựa trên giá trị sortBy
   const sortedProducts = filteredProducts.sort((a, b) => {
     switch (sortBy) {
-      case "Sort by Price: ↑":
-        // Sắp xếp theo giá tăng dần
+      case "Sắp xếp theo giá: ↑":
         return parsePrice(a.price) - parsePrice(b.price);
-      case "Sort by Price: ↓":
-        // Sắp xếp theo giá giảm dần
+      case "Sắp xếp theo giá: ↓":
         return parsePrice(b.price) - parsePrice(a.price);
       case "Sắp Xếp":
-        // Sắp xếp theo đánh giá giảm dần
         return b.reviews - a.reviews;
       default:
         return 0;
@@ -110,10 +107,8 @@ const Product = ({ onUpdateWishlistCount }) => {
           icon4={icon4}
         />
 
-        {/* Bộ lọc sản phẩm */}
         <div className="filter-wrapper">
           <div className="filter-container">
-            {/* Lọc theo loại phòng */}
             <div className="filter-item dropdown">
               <div>
                 <img src={map} alt="map" style={{ width: "100%" }} />
@@ -128,7 +123,6 @@ const Product = ({ onUpdateWishlistCount }) => {
                   {showDropdown ? "▲" : "▼"}
                 </p>
 
-                {/* Hiển thị dropdown khi nhấn vào */}
                 {showDropdown && (
                   <div className="dropdown-content">
                     {allCategories.map((category, index) => (
@@ -148,10 +142,9 @@ const Product = ({ onUpdateWishlistCount }) => {
               </div>
             </div>
 
-            {/* Lọc theo giá (giá tối thiểu) */}
             <div className="filter-item">
               <Icon>
-                <img src={pricedown} />
+                <img src={pricedown} alt="price down" />
               </Icon>
               <div>
                 <p className="filter-title">Giá</p>
@@ -170,10 +163,9 @@ const Product = ({ onUpdateWishlistCount }) => {
               </div>
             </div>
 
-            {/* Lọc theo giá (giá tối đa) */}
             <div className="filter-item">
               <Icon>
-                <img src={priceup} />
+                <img src={priceup} alt="price up" />
               </Icon>
               <div>
                 <p className="filter-title">Giá</p>
@@ -192,20 +184,18 @@ const Product = ({ onUpdateWishlistCount }) => {
               </div>
             </div>
 
-            {/* Tìm kiếm sản phẩm theo tên */}
             <div className="search-bar">
               <Icon>
-                <img src={search} />
+                <img src={search} alt="search" />
               </Icon>
               <input
                 className="filter-description"
                 placeholder="Tìm theo tên"
                 value={nameFilter}
-                onChange={(e) => setNameFilter(e.target.value)} // Cập nhật chuỗi tìm kiếm
+                onChange={(e) => setNameFilter(e.target.value)}
               />
             </div>
 
-            {/* Bộ lọc sắp xếp sản phẩm */}
             <div className="sort-wrapper">
               <p
                 className="filter-title"
@@ -215,24 +205,23 @@ const Product = ({ onUpdateWishlistCount }) => {
                 {sortBy} <span>{showSortDropdown ? "▲" : "▼"}</span>
               </p>
 
-              {/* Hiển thị dropdown sắp xếp khi nhấn vào */}
               {showSortDropdown && (
                 <div className="dropdown-content">
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sắp Xếp")}
+                    onClick={() => handleSortChange("Sắp Xếp")}
                   >
                     Tất Cả
                   </div>
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sort by Price: ↑")}
+                    onClick={() => handleSortChange("Sắp xếp theo giá: ↑")}
                   >
                     Sắp xếp theo giá: ↑
                   </div>
                   <div
                     className="dropdown-item"
-                    onClick={() => setSortBy("Sort by Price: ↓")}
+                    onClick={() => handleSortChange("Sắp xếp theo giá: ↓")}
                   >
                     Sắp xếp theo giá: ↓
                   </div>
@@ -242,8 +231,7 @@ const Product = ({ onUpdateWishlistCount }) => {
           </div>
         </div>
 
-        {/* Danh sách sản phẩm đã lọc và sắp xếp */}
-        <div className="container recent">
+        <div className="container recent" ref={allProductRef}>
           <AllProduct
             products={sortedProducts}
             onUpdateWishlistCount={onUpdateWishlistCount}
@@ -256,7 +244,6 @@ const Product = ({ onUpdateWishlistCount }) => {
 
 export default Product;
 
-// Styled component cho phần biểu tượng
 const Icon = styled.div`
   img {
     width: 100%;

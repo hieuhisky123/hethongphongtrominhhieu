@@ -42,7 +42,7 @@ const BackgroundImage = styled.img`
   object-fit: cover;
   aspect-ratio: 1920/400;
 
-  @media (max-width: 460px) {
+  @media screen and (min-width: 320px) and (max-width: 760px) {
     height: 200px;
   }
 `;
@@ -61,7 +61,7 @@ const Title = styled.h1`
   margin-bottom: 10px;
   margin-top: 20px;
 
-  @media (max-width: 460px) {
+  @media screen and (min-width: 320px) and (max-width: 760px) {
     font-size: 26px;
     margin-top: 150px;
   }
