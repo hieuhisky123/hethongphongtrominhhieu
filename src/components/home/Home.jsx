@@ -5,11 +5,10 @@ import Freeshapping from "./freeShapping";
 import RecentCard from "./recent/RecentCard";
 import DecorPaner from "./decor";
 import Sampledesign from "./samdesin";
-import Ourteam from "./ourteam";
 
 const Home = () => {
   return (
-    <Wapper>
+    <Wrapper>
       <Hero />
       <Freeshapping />
       <RecentCard />
@@ -20,13 +19,14 @@ const Home = () => {
       {/* <Location /> */}
       {/* <Team /> */}
       {/* <Price /> */}
-    </Wapper>
+    </Wrapper>
   );
 };
 
 export default Home;
-const Wapper = styled.div`
+
+const Wrapper = styled.div`
   width: 100%;
   max-width: 1440px;
-  margin: 0px auto;
+  margin: 0 auto;
 `;

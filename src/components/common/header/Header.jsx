@@ -3,7 +3,7 @@ import "./header.css";
 import { nav } from "../../data/Data";
 import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { FaHeart } from "react-icons/fa"; // Import biểu tượng trái tim từ react-icons
+import { FaHeart, FaTimes } from "react-icons/fa"; // Import thêm FaTimes icon để làm nút đóng
 import mn1 from "../../../acsset/slice/mn1.png";
 import mlogo1 from "../../../acsset/slice/Logo 1.png";
 import { Crecontext } from "../../providertocar";
@@ -11,9 +11,9 @@ import { Crecontext } from "../../providertocar";
 const Header = () => {
   const [navList, setNavList] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-  // const [wishlistCount, setWishlistCount] = useState(0); // Số lượng sản phẩm trong wishlist
-  const { car } = useContext(Crecontext); // Lấy dữ liệu từ context
+  const { car } = useContext(Crecontext);
   const wishlistCount = car.length;
+
   const handleScroll = () => {
     const position = window.pageYOffset;
     setScrollPosition(position);
@@ -21,22 +21,17 @@ const Header = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
-  // Cập nhật số lượng sản phẩm trong wishlist từ localStorage
-  // useEffect(() => {
-  //   const savedWishlist = localStorage.getItem("wishlist");
-  //   if (savedWishlist) {
-  //     setWishlistCount(JSON.parse(savedWishlist).length);
-  //   }
-  // }, [wishlistCount]);
-
   const handleShow = () => {
     setNavList(!navList);
+  };
+
+  const handleCloseMenu = () => {
+    setNavList(false);
   };
 
   return (
@@ -63,31 +58,22 @@ const Header = () => {
             ))}
           </ul>
         </MenuLeft>
-        {/* Hiển thị số lượng wishlist bên cạnh biểu tượng trái tim */}
-        {/* <WishlistIcon>
-          <Link to="/wishlist">
-            <FaHeart className="rawf-rtrt"  size={24} />
-            {wishlistCount > 0 && (
-              <WishlistCount>{wishlistCount}</WishlistCount>
-            )}
-          </Link>
-        </WishlistIcon> */}
-        <MenuMobile>
-          <img src={mn1} alt="menu" onClick={handleShow} />
-        </MenuMobile>
-        {navList && (
-          <ConMenumobileConten navList={navList}>
-            {nav?.map((item, index) => {
-              return (
-                <HoverStyled key={index}>
-                  <NavLink to={item.path} onClick={handleShow}>
-                    <p>{item.text}</p>
-                  </NavLink>
-                </HoverStyled>
-              );
-            })}
-          </ConMenumobileConten>
-        )}
+
+        <MenuMobileButton onClick={handleShow}>
+          {navList ? <FaTimes size={24} /> : <img src={mn1} alt="menu" />}
+        </MenuMobileButton>
+
+        <ConMenumobileConten navList={navList}>
+          <div>
+            {nav?.map((item, index) => (
+              <HoverStyled key={index}>
+                <NavLink to={item.path} onClick={handleCloseMenu}>
+                  <p>{item.text}</p>
+                </NavLink>
+              </HoverStyled>
+            ))}
+          </div>
+        </ConMenumobileConten>
       </Container>
     </Wapper>
   );
@@ -105,7 +91,7 @@ const Wapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999999999;
+  z-index: 999;
 `;
 
 const Container = styled.div`
@@ -119,6 +105,9 @@ const Container = styled.div`
   background: ${(props) =>
     props.scrollPosition > 50 ? "rgba(255, 255, 255, 0.8)" : ""};
   position: relative;
+  @media screen and (min-width: 320px) and (max-width: 840px) {
+    height: 80px;
+  }
 `;
 
 const Menudestop = styled.div`
@@ -141,31 +130,53 @@ const Menudestop = styled.div`
   }
 `;
 
-const MenuMobile = styled.div`
+const MenuMobileButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 40px;
+  top: 8px;
+  right: 2px;
   z-index: 2;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
   @media screen and (min-width: 840px) {
     display: none;
   }
 `;
 
 const ConMenumobileConten = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  position: absolute;
+  position: fixed;
   top: 0;
-  gap: 10px;
   right: 0;
-  background: #fff;
   height: 100vh;
-  width: ${(props) => (props.navList ? "50%" : "0")};
-  padding: ${(props) => (props.navList ? "10px" : "0")};
+  width: 100vw; /* Cover full viewport width */
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay background */
+  transition: transform 0.5s ease;
   z-index: 1;
-  transition: width 0.5s ease, padding 0.5s ease;
-  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  transform: ${(props) =>
+    props.navList ? "translateX(0)" : "translateX(100%)"};
+
+  > div {
+    background: #fff;
+    width: 50%; /* Sidebar takes up 50% of the viewport width */
+    height: 100%;
+    padding: 20px;
+  }
 `;
 
 const MenuLeft = styled.div`
@@ -175,7 +186,8 @@ const MenuLeft = styled.div`
 `;
 
 const HoverStyled = styled.div`
-  padding: 10px;
+  padding: 15px;
+  margin-top: 20px;
   p {
     color: rgba(17, 16, 16, 1);
     text-align: left;
@@ -189,6 +201,7 @@ const HoverStyled = styled.div`
     background: #ccc;
   }
 `;
+
 const LogoImgio = styled.div`
   @media screen and (min-width: 320px) and (max-width: 460px) {
     display: none;
@@ -197,6 +210,7 @@ const LogoImgio = styled.div`
     width: 100%;
   }
 `;
+
 const LogoImg = styled.div`
   position: absolute;
   top: 0;
@@ -204,48 +218,5 @@ const LogoImg = styled.div`
   @media screen and (min-width: 460px) {
     width: 500px;
     display: none;
-  }
-`;
-
-const WishlistIcon = styled.div`
-  display: flex;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-  @media screen and (min-width: 320px) and (max-width: 460px) {
-    .rawf-rtrt {
-      position: absolute;
-      top: -10px;
-      right: -260px;
-    }
-  }
-
-  a {
-    color: #000;
-    text-decoration: none;
-
-    &:hover {
-      color: #ff0000;
-    }
-  }
-`;
-
-const WishlistCount = styled.span`
-  background: #ff0000;
-  color: white;
-  border-radius: 50%;
-  padding: 2px 8px;
-  font-size: 14px;
-  position: absolute;
-  top: -10px;
-  right: -20px;
-  @media screen and (min-width: 320px) and (max-width: 460px) {
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    top: 0px;
-    right: -255px;
   }
 `;
