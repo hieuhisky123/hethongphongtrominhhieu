@@ -76,23 +76,22 @@ const ProductDetail = () => {
             <div className="product-info">
               <h1>{product.name}</h1>
               <p className="price">Giá phòng: {product.price}</p>
-
               <div className="ratings">
                 <span>⭐⭐⭐⭐⭐</span>
                 <span>{product.reviews} Người đánh giá</span>
               </div>
-
               <p className="description-short">{product.shortDescription}</p>
-
               <div className="product-details">
                 <p>Tiện Ích: {product.utilities.join(", ")}</p>
                 <p>Phòng: {product.sku}</p>
                 <p>Khu Vực: {product.category}</p>
                 <p>Nội Thất: {product.tags.join(", ")}</p>
               </div>
-
               <div className="social-share">
                 <h1>Liên Hệ:</h1>
+              </div>
+              <div className="social-share">
+                <h3>Mr. Hiếu</h3>
               </div>
               <div className="social-share">
                 <Icon>
@@ -112,6 +111,36 @@ const ProductDetail = () => {
                 <Icon>
                   <a
                     href="https://m.me/100049668137817"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={facebook} alt="facebook" />
+                  </a>
+                </Icon>
+              </div>
+              <div className="divider"></div>{" "}
+              {/* Divider between Mr. Hiếu and Mr. An */}
+              <div className="social-share">
+                <h3>Mr. An</h3>
+              </div>
+              <div className="social-share">
+                <Icon>
+                  <a href="tel:0938739530">
+                    <img src={phone} alt="phone" />
+                  </a>
+                </Icon>
+                <Icon>
+                  <a
+                    href="https://zalo.me/0708538783"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={zalo} alt="zalo" />
+                  </a>
+                </Icon>
+                <Icon>
+                  <a
+                    href="https://m.me/61561736154560"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -189,19 +218,7 @@ const Icon = styled.div`
   align-items: center;
 `;
 
-const WishlistButton = styled.button`
-  background-color: black;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 30px;
-
-  &:hover {
-    background-color: gray;
-  }
-`;
+const WishlistButton = styled.button``;
 
 const CartButton = styled.button`
   background-color: #007bff;
