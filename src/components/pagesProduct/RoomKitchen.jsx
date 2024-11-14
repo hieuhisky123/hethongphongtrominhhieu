@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Back from "../common/Back";
 import "../home/recent/recent.css";
 import img from "../images/about.jpg";
@@ -12,6 +12,7 @@ import priceup from "../images/priceup.png";
 import pricedown from "../images/pricedown.png";
 import search from "../images/search.png";
 import AllProduct from "../products/AllProduct";
+import Pagination from "../home/pagination/Pagination"; // Import component phân trang
 
 const RoomKitchen = () => {
   // State lưu trữ giá trị của các bộ lọc
@@ -20,6 +21,10 @@ const RoomKitchen = () => {
   const [nameFilter, setNameFilter] = useState("");
   const [sortBy, setSortBy] = useState("Tất cả");
   const [showSortDropdown, setShowSortDropdown] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1); // State cho trang hiện tại
+
+  const itemsPerPage = 6; // Số sản phẩm trên mỗi trang
+  const allProductRef = useRef(null);
 
   // Hàm để chuyển giá từ chuỗi về số
   const parsePrice = (priceString) => {
@@ -68,6 +73,23 @@ const RoomKitchen = () => {
         return 0;
     }
   });
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedProducts = sortedProducts.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    scrollToAllProduct();
+  };
+
+  const scrollToAllProduct = () => {
+    if (allProductRef.current) {
+      allProductRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <>
@@ -177,7 +199,14 @@ const RoomKitchen = () => {
 
         {/* Danh sách sản phẩm */}
         <div className="container recent">
-          <AllProduct products={filteredProducts} />
+          <AllProduct products={paginatedProducts} />
+
+          <Pagination
+            totalItems={sortedProducts.length}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            onPageChange={handlePageChange}
+          />
         </div>
       </section>
     </>

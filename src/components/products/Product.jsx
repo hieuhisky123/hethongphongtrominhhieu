@@ -15,6 +15,7 @@ import icon4 from "../images/Wardrobe.png";
 import priceup from "../images/priceup.png";
 import pricedown from "../images/pricedown.png";
 import search from "../images/search.png";
+import Pagination from "../home/pagination/Pagination";
 
 const Product = ({ onUpdateWishlistCount }) => {
   const [selectedCategories, setSelectedCategories] = useState([]);
@@ -24,6 +25,9 @@ const Product = ({ onUpdateWishlistCount }) => {
   const [maxPrice, setMaxPrice] = useState(10000000);
   const [sortBy, setSortBy] = useState("Sắp Xếp");
   const [showSortDropdown, setShowSortDropdown] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const itemsPerPage = 10; // Set the number of items per page
 
   // Hàm chuyển đổi giá từ chuỗi thành số
   const parsePrice = (priceString) => {
@@ -94,6 +98,17 @@ const Product = ({ onUpdateWishlistCount }) => {
         return 0;
     }
   });
+
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const paginatedProducts = sortedProducts.slice(
+    startIndex,
+    startIndex + itemsPerPage
+  );
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    scrollToAllProduct(); // Cuộn lên phần AllProduct khi chuyển trang
+  };
 
   return (
     <>
@@ -233,8 +248,15 @@ const Product = ({ onUpdateWishlistCount }) => {
 
         <div className="container recent" ref={allProductRef}>
           <AllProduct
-            products={sortedProducts}
+            products={paginatedProducts}
             onUpdateWishlistCount={onUpdateWishlistCount}
+          />
+
+          <Pagination
+            totalItems={sortedProducts.length}
+            itemsPerPage={itemsPerPage}
+            currentPage={currentPage}
+            onPageChange={handlePageChange} // Gọi hàm handlePageChange khi chuyển trang
           />
         </div>
       </section>
